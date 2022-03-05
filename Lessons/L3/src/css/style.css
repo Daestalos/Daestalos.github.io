@@ -1,0 +1,33 @@
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: justify;
+    text-decoration: none;
+    text-shadow: 1px 10px 10px #000;
+    text-transform: none;
+    letter-spacing: 0.3px;
+    /* line-height: 50px; */
+    
+}
+
+.example-block{
+    display: block;
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    /* border: 1px solid #000;
+    margin: 20px 40px 5px 10px;
+    padding: 20px 40px 5px 10px;
+    /* width: 50%;
+    height: 600px;
+    min-width: none;
+    max-width: none;
+    overflow: auto; */ */
+}
+
+.example-string{
+    margin: 10px;
+    border: 1px solid #000;
+}
