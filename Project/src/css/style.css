@@ -1,159 +1,419 @@
-body{
-    font-family: Arial, sans-serif;
+body {
+	font-family: Arial, sans-serif;
 }
 
 nav {
-    width: 100%;
-    height: 60px;
-    background: #344051;
+	width: 100%;
+	height: 60px;
+	background: #344051;
 }
 
-.logo{
-    color: white;
-    font-size: 30px;
-    line-height: 60px;
-    padding-left: 380px;
-    float: left;
+.logo {
+	color: white;
+	font-size: 30px;
+	line-height: 60px;
+	padding-left: 380px;
+	float: left;
 }
 
-.menu{
-    float: left;
-    padding-left: 430px;
-
+.menu {
+	float: left;
+	padding-left: 430px;
 }
 
-.menu li{
-    float: left;
-    line-height: 60px;
-    color: white;
-    margin-right: 40px;
-    font-size: 16px;
-    text-transform: uppercase;
+.menu li {
+	float: left;
+	line-height: 60px;
+	color: white;
+	margin-right: 40px;
+	font-size: 16px;
+	text-transform: uppercase;
 }
 
 .Main {
-    width: 100%;
-    height: 1020px;
-    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat , url(../img/bg.png) center/cover no-repeat;
+	width: 100%;
+	height: 1020px;
+	background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.png) center/cover no-repeat;
 }
 
-.Title__Container{
-    float: left;
-    margin: 432px 0px 0px 404px;
-    color: #2c384a;
-    text-align: center;
+.Title__Container {
+	float: left;
+	margin: 432px 0px 0px 404px;
+	color: #2c384a;
+	text-align: center;
 }
 
-.Title__Container h1{
-    font-size: 60px;
-    font-weight: bold;
+.Title__Container h1 {
+	font-size: 60px;
+	font-weight: bold;
 }
 
-.Title__Container h4{
-    margin-top: 40px;
-    font-size: 22px;
-    color: #79818d;
-    font-weight: bold;
+.Title__Container h4 {
+	margin-top: 40px;
+	font-size: 22px;
+	color: #79818d;
+	font-weight: bold;
 }
 
-.Title__Container input{
-    height: 40px;
-    text-align: center;
-    border: 2px solid #6d7682;
-    background: none;
-    border-radius: 5px;
-    color: #6d7682;
-    font-size: 13px;
-    padding: 0px 16px;
-    margin: 58px 14px;
-
+.Title__Container input {
+	height: 40px;
+	text-align: center;
+	border: 2px solid #6d7682;
+	background: none;
+	border-radius: 5px;
+	color: #6d7682;
+	font-size: 13px;
+	padding: 0px 16px;
+	margin: 58px 14px;
 }
 
-.Header__Text{
-    padding: 110px 0px 35px 0px;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    color: #263244;
-    background: url(../img/underline.png) no-repeat center bottom;
+.Header__Text {
+	padding: 110px 0px 35px 0px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #263244;
+	background: url(../img/underline.png) no-repeat center bottom;
 }
+
 
 /* About */
 
-.About{
-    width: 100%;
-    height: 720px;
-    background-color: #fcfdfd;
+.About {
+	width: 100%;
+	height: 720px;
+	background-color: #fcfdfd;
 }
 
-.About__Container{
-    height: 100%;
-    width: 100%;
-    padding: 0px 580px;
+.About__Container {
+	height: 100%;
+	width: 100%;
+	padding: 0px 580px;
 }
 
-.About__Img{
-    padding: 60px 0px 25px 0px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto 
+.About__Img {
+	padding: 60px 0px 25px 0px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto
 }
 
-.About__Text p{
-    font-size: medium;
-    color: #3f495a;
-    padding-bottom: 42px;
+.About__Text p {
+	font-size: medium;
+	color: #3f495a;
+	padding-bottom: 42px;
 }
 
-.About__Container input{
-    position: relative;
-    left: 45%;
-    transform: translate(-45%, 0);
-    margin: 30px;
-    padding: 10px;
-    text-align: center;
-    border: 2px solid #6d7682;
-    background: none;
-    border-radius: 5px;
-    color: #6d7682;
+.About__Container input {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	padding: 10px;
+	text-align: center;
+	border: 2px solid #6d7682;
+	background: none;
+	border-radius: 5px;
+	color: #6d7682;
 }
+
 
 /* Skills */
 
-.Skills{
-    width: 100%;
-    height: 550px;
-    background: url(../img/SkillsBg.png) no-repeat;
+.Skills {
+	width: 100%;
+	height: 550px;
+	background: url(../img/SkillsBg.png) no-repeat;
+	background-size: cover
 }
 
 .Skills__Container {
-    height: 100%;
-    width: 100%;
-    padding: 0px 380px;
+	height: 100%;
+	width: 100%;
+	padding: 0px 380px;
 }
 
-.Skills__List{
-    padding: 80px 40px 0px 40px;
-    width: 25%;
-    float: left;
+.Skills__List {
+	padding: 80px 40px 0px 40px;
+	width: 25%;
+	float: left;
 }
 
-.Skills__List img{
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
+.Skills__List img {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
 }
 
-.Skills__List__Subtitle{
-    padding: 40px 0px 20px 0px;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    color: #d2812b;
+.Skills__List__Subtitle {
+	padding: 40px 0px 20px 0px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: #d2812b;
 }
 
-.Skills__List__Text{
-    font-size: medium;
-    color: #3f495a;
-    text-align: center;
+.Skills__List__Text {
+	font-size: medium;
+	color: #3f495a;
+	text-align: center;
+}
+
+
+/* Case */
+
+.Case {
+	width: 100%;
+	height: 1150px;
+	background-color: #fcfdfd;
+}
+
+.Case__Container {
+	height: 75%;
+	width: 60%;
+	margin: 0px 388px;
+}
+
+.Case__Image p {
+	padding: 40px 0px 45px 0px;
+	font-size: medium;
+	text-align: center;
+	color: #3f495a;
+}
+
+.Case__Image img {
+	width: 100%;
+}
+
+.Case__Body {
+	height: 25%;
+	width: 60%;
+	margin: 0px 388px;
+}
+
+.Case__Body__Left {
+	height: 100%;
+	width: 20%;
+	float: left;
+}
+
+.Case__Body__Left h2 {
+	font-weight: bold;
+	color: #384354;
+	font-size: large;
+	line-height: 45px;
+}
+
+.Case__Body__Left p {
+	color: #384354;
+	font-size: medium;
+}
+
+.Case__Body__Left input {
+	border-radius: 10px;
+	background-color: #63b5ae;
+	height: 40px;
+	width: 100%;
+	margin-top: 25px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: large;
+}
+
+.Case__Body__Right {
+	height: 100%;
+	width: 80%;
+	float: left;
+}
+
+.Case__Body__Right h2 {
+	font-weight: bold;
+	color: #384354;
+	font-size: large;
+	line-height: 45px;
+}
+
+.Case__Body__Right p {
+	color: #384354;
+	font-size: medium;
+}
+
+
+/* Price */
+
+.Price {
+	height: 870px;
+	width: 100%;
+}
+
+.Price__Container {
+	height: 73%;
+	width: 100%;
+	padding: 0px 500px;
+	background: url(../img/PriceUnderline.png) no-repeat center bottom;
+}
+
+.Price__Title {
+	padding: 110px 0px 35px 0px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #263244;
+}
+
+.Price__Container form>p {
+	color: #1c2534;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 40px 0px 15px 0px;
+}
+
+.Price__Container select {
+	border: 0px;
+	width: 100%;
+	height: 60px;
+	background-color: #eeeeee;
+	color: #737373;
+}
+
+.Price__Footer {
+	height: 30%;
+	width: 100%;
+	padding: 0px 500px;
+}
+
+.Price__Footer p {
+	padding: 25px 0px 10px 0px;
+	font-size: large;
+	font-weight: bold;
+}
+
+.Price__Footer span {
+	float: right;
+	font-size: larger;
+}
+
+
+/* Statistics */
+
+.Statistics {
+	width: 100%;
+	height: 550px;
+	background: url(../img/StatisticsBG.png) no-repeat;
+	background-size: cover;
+}
+
+.Statistics__Container {
+	height: 100%;
+	width: 100%;
+	padding: 0px 380px;
+}
+
+.Statistics__List {
+	padding: 80px 40px 0px 40px;
+	width: 25%;
+	float: left;
+}
+
+.Statistics__List img {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.Statistics__List__Subtitle {
+	padding: 40px 0px 20px 0px;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	color: #323e4f;
+}
+
+.Statistics__List__Text {
+	font-size: medium;
+	color: #3f495a;
+	text-align: center;
+}
+
+
+/* Review */
+
+.Review {
+	width: 100%;
+	height: 590px;
+}
+
+.Review__Container {
+	width: 100%;
+	height: 100%;
+}
+
+.Review__Container img {
+	padding: 40px 0px 25px 0px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+.Review__Body {
+	width: 100%;
+	height: 100%;
+}
+
+.Review__Body p {
+	text-align: center;
+    margin-bottom: 20px;
+}
+
+.Review__Input {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	height: 30px;
+	width: 100%;
+}
+
+.Review__Radio {
+	display: inline-block;
+	position: relative;
+	padding-left: 50px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+}
+
+
+/* Убираем дефолтный браузерный радиобатон */
+
+.Review__Radio input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+
+/* Задаем стили */
+
+.Review__Checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 15px;
+	width: 15px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+
+
+/* Если выбрано - оранжевый фон */
+
+.Review__Radio input:checked~.Review__Checkmark {
+	background-color: orange;
+}
+
+.Contacts {
+	width: 100%;
+	height: 800px;
+	background-color: green;
 }

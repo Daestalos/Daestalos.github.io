@@ -89,8 +89,8 @@
             <p class="Header__Text">КЕЙСЫ</p></div>
             <div class="Case__Image">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, numquam.</p>
-            <img src="" alt="">     <!-- Слайдер -->
-        </div>
+            <img src="./img/Case.png" alt="">     <!-- Слайдер -->
+            </div>
       </div>
       <div class="Case__Body">
         <div class="Case__Body__Left">
@@ -98,7 +98,7 @@
             <p>Какая компания</p>
             <h2>WEBSITE:</h2>
             <p>https://example.com</p>
-            <input class="Case__Body__Button" type="button" value="VISIT LIVE SITe">
+            <input type="button" value="VISIT LIVE SITE">
         </div>
         <div class="Case__Body__Right">
             <h2>Название проекта</h2>
@@ -109,29 +109,27 @@
 
     <div class="Price">
         <div class="Price__Container">
-            <p class="Price__Title">Расчет стоимостит</p>
+            <p class="Price__Title">Расчет стоимости</p>
             <form>
-                <p class="Price__Form__Title">ТИП САЙТА</p>
+                <p>ТИП САЙТА</p>
                 <select name="List__One" id="">
-                    <option value="Item__One">Item__One</option>
+                    <option value="Item__One">Выберите пункт...</option>
                 </select>
-                <br>
-                <p class="Price__Form__Title">ДИЗАЙН</p>
+                <p>ДИЗАЙН</p>
                 <select name="List__Two" id="">
-                    <option value="Item__One">Item__One</option>
+                    <option value="Item__One">Выберите пункт...</option>
                 </select>
-                <br>
-                <p class="Price__Form__Title">АДАПТИВНОСТЬ</p>
+                <p>АДАПТИВНОСТЬ</p>
                 <select name="List__Three" id="">
-                    <option value="Item__One">Item__One</option>
+                    <option value="Item__One">Выберите пункт...</option>
                 </select>
-                <br>
-                <hr>
-                <!-- Криво, но пока не знаю как переписать -->
-                <p>Сроки</p> <span>0</span>
-                <p>Стоимость</p> <span>0</span>
             </form>
         </div>
+        <div class="Price__Footer"> <!-- Криво, но пока не знаю как переписать -->
+                <p>Сроки <span>0</span></p> 
+                <p>Стоимость <span>0</span></p> 
+        </div>    
+        
     </div>
 
     <div class="Statistics">
@@ -141,22 +139,22 @@
             </div>
         
             <div class="Statistics__List">
-                <img src="" alt="">
+                <img src="./img/StatisticsSmile.png" alt="">
                 <p class="Statistics__List__Subtitle">120</p>
                 <p class="Statistics__List__Text">Счастливых клиентов</p>
             </div>
             <div class="Statistics__List">
-                <img src="" alt="">
+                <img src="./img/StatisticsSign.png" alt="">
                 <p class="Statistics__List__Subtitle">4,600</p>
                 <p class="Statistics__List__Text">Часов работы</p>
             </div>
             <div class="Statistics__List">
-                <img src="" alt="">
+                <img src="./img/StatisticsTick.png" alt="">
                 <p class="Statistics__List__Subtitle">340</p>
                 <p class="Statistics__List__Text">Проектов завершено</p>
             </div>
             <div class="Statistics__List">
-                <img src="" alt="">
+                <img src="./img/StatisticsCup.png" alt="">
                 <p class="Statistics__List__Subtitle">23</p>
                 <p class="Statistics__List__Text">Наград получено</p>
             </div>
@@ -164,21 +162,35 @@
     </div>
 
     <div class="Review">
+
+
         <div class="Review__Container">
             <div class="Review__Header">
                 <p class="Header__Text">ОТЗЫВЫ</p>
             </div>
+            <div>
+                <img src="./img/ReviewPhoto.png" alt="">
+            </div>
             <div class="Review__Body">
                 <!-- ТОЖЕ СЛАЙДЕР -->
-                <img src="" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae doloremque magnam ex culpa aliquid consectetur totam exercitationem consequuntur repudiandae atque.</p>
                 <br>
-                <p>Михаил, Ген директор ПАО "Газпром".</p>
+                <p><b>Михаил</b>, Ген директор ПАО "Газпром".</p>
                 <br>
-                <input type="radio" name="radio" value="1"> 
-                <input type="radio" name="radio" value="2">
-                <input type="radio" name="radio" value="3">
-                
+                <div class="Review__Input">
+                    <label class="Review__Radio">
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="Review__Checkmark"></span>
+                      </label>
+                      <label class="Review__Radio">
+                        <input type="radio" name="radio">
+                        <span class="Review__Checkmark"></span>
+                      </label>
+                      <label class="Review__Radio">
+                        <input type="radio" name="radio">
+                        <span class="Review__Checkmark"></span>
+                      </label>
+                </div>
             </div>
         </div>
     </div>
@@ -186,7 +198,7 @@
     <div class="Contacts">
         <div class="Contacts__Container">
             <div class="Contacts__Header">
-                <p class="Header__Text">ОТЗЫВЫ</p>
+                <p class="Header__Text">МОИ КОНТАКТЫ</p>
             </div>
             <div class="Contacts__Body">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, neque!</p>
