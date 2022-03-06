@@ -1,0 +1,24 @@
+.example-block{
+    height: 400px;
+    box-shadow: 2px 2px 10px #000;
+    margin: 30px;
+    /* background-color: blue; */
+    /* background-image: url("../img/"); */
+    /* градиент: www.colorzilla.com/gradient-editor/ */
+    /* background-repeat: round; позволяет автоматически обрезать картинку ровно */
+    /* background-position: center; обычная позиция */
+    /* background-attachment: fixed; при прокрутке страницы фон прокручивается за нами */
+    /* либо можно все это записать одной строкой */
+    /* background: url("../img") 50% 50%/800px auto no-repeat local;
+    для нескольких картинок на задний фон: */
+    background: url("../img/img1") 50% 50%/800px auto no-repeat local, url("../img/img2") 50% 50%/800px auto no-repeat local
+
+}
+
+.list{
+    margin: 30px;
+    padding: 10px 0px 10px 0px;
+    font-size: 20px;
+}
+
+.list
