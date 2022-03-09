@@ -249,8 +249,9 @@ body {
   .Price__Container {
 	height: 73%;
 	width: 100%;
-	padding: 0px 500px;
+	padding: 0px 487px;
 	background: url(../img/PriceUnderline.png) no-repeat center bottom;
+
   }
   
   .Price__Title {
@@ -279,7 +280,7 @@ body {
   .Price__Footer {
 	height: 30%;
 	width: 100%;
-	padding: 0px 500px;
+	padding: 0px 487px;
   }
   
   .Price__Footer p {
@@ -293,6 +294,22 @@ body {
 	font-size: larger;
   }
   
+  .Price__Form select {
+	width: 100%;
+	height: 60px;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px;
+	appearance: none;
+	background-blend-mode: multiply;
+	background-image: url('../img/Price_Select_Cursor.png');
+	background-repeat: no-repeat;
+	background-position: 97% 50%;
+	background-color: #eeeeee;
+  }
+
+
+
   
   /* Statistics */
   
