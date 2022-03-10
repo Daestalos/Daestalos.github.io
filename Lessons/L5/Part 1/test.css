@@ -1,0 +1,49 @@
+body {
+    padding: 50px;
+    font-family: Arial, sans-serif;
+}
+.main_block{
+    border: 2px solid cyan;
+    max-width: 800px;
+    height: 800px;
+
+    /* позволяет выравнить элемент по центру */
+    margin: 0 auto; 
+
+
+}
+
+.main_block div{
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: 3;
+}
+
+.block_1{
+    background-color: antiquewhite;
+}
+
+.block_2{
+    background-color: coral;
+
+    position: absolute;
+    /* уехавший блок освобождает позицию
+    блоки схлопнутся, не стоит им злоупотреблять */
+    top: 100px;
+    left: 200px;
+
+
+    /* position: relative;
+    уехавший блок оставляет себе покинутую
+    позицию, блоки не схлопнутся
+    top: 10px;
+    left: 10px;
+    z-index: 2; */
+}
+
+.block_3{
+    background-color: lightgreen;
+    position: relative;
+    z-index: 102;
+}
