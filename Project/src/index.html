@@ -7,6 +7,15 @@
       <title></title>
    </head>
    <body>
+
+     <!-- Прелоадер -->
+  <div class="Preloader">
+   <div class="Preloader__Row">
+   </div>
+ </div>
+
+ <!-- Основной контент страницы -->
+
       <header>
          <nav>
             <div class="logo">
@@ -14,26 +23,27 @@
             </div>
             <div class="menu">
                <ul>
-                  <li>Обо мне</li>
-                  <li>Услуги</li>
-                  <li>Кейсы</li>
-                  <li>Прайс</li>
-                  <li>Отзывы</li>
-                  <li>Контакты</li>
+                  <li><a href="#">Обо мне</a></li>
+                  <li><a href="#">Услуги</a></li>
+                  <li><a href="#">Кейсы</a></li>
+                  <li><a href="#">Прайс</a></li>
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Контакты</a></li>
                </ul>
             </div>
          </nav>
       </header>
-      <div class="Main">
+      <main>
+      <section class="Main">
          <div class="Title__Container">
             <h1>Привет <br> Я Андрей Браун</h1>
             <h4>Фулл стек веб-разработчик</h4>
-            <input type="submit" value="Обо мне">
-            <input type="submit" value="Мои работы">
+            <input type="button" value="Обо мне">
+            <input type="button" value="Мои работы">
          </div>
-      </div>
+      </section>
       <!-- ПРОДОЛЖЕНИЕ САМ -->
-      <div class="About">
+      <section class="About">
          <div class="About__Container">
             <div class="About__Header">
                <p class="Header__Text">ОБО МНЕ</p>
@@ -49,8 +59,8 @@
                <input type="button" value="Скачать резюме">
             </div>
          </div>
-      </div>
-      <div class="Skills">
+      </section>
+      <section class="Skills">
          <div class="Skills__Container">
             <div class="Skills__Header">
                <p class="Header__Text">ЧТО Я УМЕЮ</p>
@@ -76,8 +86,8 @@
                <p class="Skills__List__Text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, voluptas.</p>
             </div>
          </div>
-      </div>
-      <div class="Case">
+      </section>
+      <section class="Case">
          <div class="Case__Container">
             <div class="Case__Header">
                <p class="Header__Text">КЕЙСЫ</p>
@@ -100,8 +110,8 @@
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, voluptate.</p>
             </div>
          </div>
-      </div>
-      <div class="Price">
+      </section>
+      <section class="Price">
          <div class="Price__Container">
             <p class="Price__Title">Расчет стоимости</p>
             <form class="Price__Form">
@@ -124,8 +134,8 @@
             <p>Сроки <span>0</span></p>
             <p>Стоимость <span>0</span></p>
          </div>
-      </div>
-      <div class="Statistics">
+      </section>
+      <section class="Statistics">
          <div class="Statistics__Container">
             <div class="Statistics__Header">
                <p class="Header__Text">НЕМНОГО СТАТИСТИКИ</p>
@@ -151,8 +161,8 @@
                <p class="Statistics__List__Text">Наград получено</p>
             </div>
          </div>
-      </div>
-      <div class="Review">
+      </section>
+      <section class="Review">
          <div class="Review__Container">
             <div class="Review__Header">
                <p class="Header__Text">ОТЗЫВЫ</p>
@@ -182,8 +192,8 @@
                </div>
             </div>
          </div>
-      </div>
-      <div class="Contacts">
+      </section>
+      <section class="Contacts">
          <div class="Contacts__Container">
             <div class="Contacts__Header">
                <p class="Header__Text">МОИ КОНТАКТЫ</p>
@@ -219,12 +229,23 @@
                <img src="" alt="">
             </div>
          </div>
-      </div>
-      <div class="Google_Map">
+      </section>
+      <section class="Google_Map">
          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75238.46684793955!2d27.523157469202452!3d53.892611934152065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1646598005570!5m2!1sru!2sby" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
+      </section>
+   </main>
       <footer class="Footer">
          <p>Копирайт</p>
       </footer>
    </body>
+
+   <script>
+      window.onload = function () {
+        document.body.classList.add('Loaded__Hidden');
+        window.setTimeout(function () {
+          document.body.classList.add('Loaded');
+          document.body.classList.remove('Loaded__Hidden');
+        }, 500);
+      }
+    </script>
 </html>

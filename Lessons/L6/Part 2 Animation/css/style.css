@@ -1,0 +1,85 @@
+body{
+    padding: 50px;
+}
+
+
+.box span{
+    display: block;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: azure;
+    /* задает время анимации  */
+    transition-duration: 2s;
+    /* анимироваться будут все значения */
+    transition-property: all; 
+    /* анимироваться будет только ширина (можно указывать через ,)  */
+    transition-property: width; 
+    /* задержка перед анимацией  */
+    transition-delay: 2s;
+    /* поведение анимации  */
+    transition-timing-function: linear; 
+
+    /* можно записать все в одну */
+    transition: all 2s 0.1s ease;
+}
+
+.box:hover{
+    background-color:aqua;
+    width: 300px;
+    opacity: 0;
+}
+
+.box2 span{
+    display: block;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.box2{
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: azure;
+    animation-name: move;
+    animation-duration: 2s;
+    /* количество повторений
+    animation-iteration-count: infinite;
+    /* поведение (normal, reverse и так далее)
+    animation-direction: alternate-reverse; */
+
+    /* так же состояние */
+    animation-fill-mode: forwards;
+
+    
+    /* универсальная запись (можно через , писать несколько) */
+    /* animation: move is linear reverse infinite backwards; */
+
+}
+
+@keyframes move{
+    /* 0% или */ from{
+        margin-left: 0;
+        /* background-color: red; */
+    }
+
+    10%{
+        background-color:blue;
+    }
+
+    /* 100% или */  to{
+        margin-left: 200px;
+        background: black;
+    }
+}
+
+.box2:hover{
+    /* при наведении ставит на паузу, состояние */
+    animation-play-state: paused;
+}
