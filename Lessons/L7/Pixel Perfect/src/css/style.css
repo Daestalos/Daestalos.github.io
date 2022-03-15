@@ -1,0 +1,22 @@
+.block_orange{
+    width: 1819px;
+    height: 327px;
+    margin: 50px 50px 50px 52px;
+    background-color: orange;
+}
+.block_green{
+    float: left;
+    width: 390px;
+    height: 590px;
+    margin-left: 50px;
+    background-color: #aabd42;
+}
+
+.block_blue{
+    float: left;
+    width: 1280px;
+    height: 600px;
+    margin-left: 46px;
+    background-color: #049fe8;
+    
+}
