@@ -1,0 +1,70 @@
+.block{
+    margin: 250px;
+    width: 1400px;
+    height: 300px;
+    background: aliceblue;
+}
+
+.row{
+    display: flex;
+    /* расположение
+    justify-content: space-around;
+    для всех элементов
+    применяем всем дочерним элементам позиционирвоание
+    align-items: center;
+
+    будут ли элементы менять позицию
+    flex-wrap: wrap; */
+
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+    height: 1000px;
+    background: darkcyan;
+    padding: 10px;
+}
+
+.col{
+    width: 100px;
+    background-color: chocolate;
+    padding: 5px;
+    font-size: 20px;
+    line-height: 200px;
+    border: 1px solid black;
+    text-align: center;
+
+    /* базовый размер элементов (ширина) 
+    flex-basis: 300px;*/
+
+    /* По умолчанию 0 
+    При 0 = не больше, чем flex-basis
+    При 1 относительно flex-basis дает разрешение на
+    изменение ширины элемента > чем задано в flex-basis
+    т.е. блок может растянуться на всю ширину, а не только на 300px 
+    flex-grow: 1; */
+    
+    /* По умолчанию 1, т.е. уменьшение разрешено
+    при 0 запрещает уменьшение
+    Тоже самое, что и flex-grow, но уже на уменьшение ширины блока 
+    т.е. не уменьшатся меньше разрешения flex-basis
+    flex-shrink: 1; */
+    /* Для всех этих 3-х правил есть короткая запись
+    flex: grow shrink basis */
+    /* flex: 1 1 300px; */
+}
+
+.col2{
+    /* конкретно данному элементу 
+    align-self: flex-end;*/
+    /* задаем в каком порядке будут следовать (в каком месте будут стоять друг за другом) */ 
+    order: 3;
+}
+
+.col1{
+    order: 2;
+}
+
+.col3{
+    order: 1;
+}

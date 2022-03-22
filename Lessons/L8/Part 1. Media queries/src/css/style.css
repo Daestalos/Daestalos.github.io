@@ -1,0 +1,63 @@
+.box{
+    margin: 50px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+ /* работает постоянно так как применяются два условия*/
+/* @media (min-width: 500px), (max-width: 600px) {
+    .box{
+        height: 500px;
+    }
+} */
+/* операторы:
+, / and / not / only  */
+
+@media not (max-width: 600px) {
+    .box{
+        height: 500px;
+    }
+}
+
+/* Значения:
+all print screen speech */
+
+@media screen and (max-width: 900px) {
+    .box{
+        width: 300px;
+    }
+}
+
+/* 
+Характеристики (что можем писать в скобках)
+aspect-ratio (соотношение экрана)*/
+
+/* @media (aspect-ratio: 16/9) {
+    .box{
+        height: 20px;
+    }
+} */
+
+/* orientation: portrait(вертикальное)/ landscape(горизонтальное) */
+
+/* @media (orientation: portrait) {
+    .box{
+        height: 20px;
+    }
+} */
+
+/* resolution */
+
+/* @media (resolution: 300dpi) {
+    .box{
+        width: 300px;
+    }
+} */
+
+/* color */
+
+@media (color) {
+    .box{
+        width: 300px;
+    }
+}
