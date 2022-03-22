@@ -264,6 +264,7 @@ nav {
 	-o-animation: AboutAnimation 2s forwards;
 	animation: AboutAnimation 2s forwards;
 }
+
 .About__Text p:nth-child(1){
 	margin-left: 500px;
 	-moz-animation: AboutAnimation 2s forwards;
@@ -541,6 +542,18 @@ nav {
 	padding-top: 60px;
 }
 
+@media screen and (max-width: 1200px){
+	.Price__Footer{
+		padding-top: 35px;
+	}
+}
+
+@media screen and (max-width: 570px){
+	.Price__Footer{
+		padding-top: 55px;
+	}
+}
+
 .Price__Footer button{
 	background: #00b6af;
 	height: 45px;
@@ -586,15 +599,8 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.Statistics__Container {
-	height: 100%;
-	width: 100%;
-	padding: 0px 380px;
-}
+
 .Statistics__List {
-	padding: 80px 40px 0px 40px;
-	width: 25%;
-	float: left;
 	opacity: 0;
 	transition: 1s;
 	-moz-animation: SkillsAndStatisticsTransition 3s 1s forwards;
@@ -609,7 +615,7 @@ nav {
 		opacity: 1;
    }
 }
-.Statistics__List img {
+.Statistics img {
 	position: relative;
 	left: 50%;
 	transform: translate(-50%, 0);
@@ -626,25 +632,36 @@ nav {
 	color: #3f495a;
 	text-align: center;
 }
+
+@media (max-width: 980px) {
+	.Statistics{
+		height: 800px;
+	}
+}
+
+@media (max-width: 576px) {
+	.Statistics{
+		height: 1500px;
+	}
+}
+
+
 /* Review */
+
+
+
 .Review {
 	width: 100%;
 	height: 590px;
 }
-.Review__Container {
-	width: 100%;
-	height: 100%;
-}
-.Review__Container img {
+
+.Review img {
 	padding: 40px 0px 25px 0px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto
 }
-.Review__Body {
-	width: 100%;
-	height: 100%;
-}
+
 .Review__Body p {
 	text-align: center;
 	margin-bottom: 20px;
@@ -660,7 +677,7 @@ nav {
 .Review__Radio {
 	display: inline-block;
 	position: relative;
-	padding-left: 50px;
+	padding-left: 20px;
 	margin-bottom: 12px;
 	cursor: pointer;
 	font-size: 22px;
@@ -714,16 +731,38 @@ nav {
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
-	height: 60%;
 }
-.Contacts__Body h1 {
+
+@media screen and (max-width: 1200px) {
+	.Contacts__Body {
+		width: 100%;
+	}
+}
+
+.Contacts__List {
+	padding-top: 20px;
+	height: 120px;
+	text-align: center;
+}
+.Contacts__List p {
+	color: white;
+}
+.Contacts__List img {
+	padding: 15px 0px 10px 0px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+
+.Contacts__H {
 	color: white;
 	font-size: large;
 	text-align: center;
 	font-weight: bold;
 	text-transform: uppercase;
 }
-.Contacts__Body>p {
+.Contacts__Text p {
 	color: white;
 	margin-top: 40px;
 	text-align: center;
@@ -766,6 +805,28 @@ nav {
 	transition: all 1s;
 }
 
+@media (max-width: 980px) {
+	.Contacts{
+		height: 1100px;
+	}
+	.row{
+		margin-left: 0;
+	}
+}
+
+
+@media (max-width: 800px) {
+
+	.Contacts__Body input[type="text"]{
+		margin: 0px 0px;
+		width: 100%;
+	}
+	.Contacts__Body input[type="email"]{
+		margin: 15px 0px;
+		width: 100%;
+	}
+}
+
 
 .Contacts__Body input[type="submit"]:hover{
 	background: white;
@@ -773,22 +834,7 @@ nav {
 }
 
 
-.Contacts__List {
-	padding-top: 20px;
-	display: inline-block;
-	width: 33%;
-	height: 120px;
-	text-align: center;
-}
-.Contacts__List p {
-	color: white;
-}
-.Contacts__List img {
-	padding: 15px 0px 10px 0px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto
-}
+
 .Contacts__Footer {
 	width: 100%;
 	height: 20%;
@@ -799,8 +845,7 @@ nav {
 /* Google */
 
 .Google_Map {
-	height: 350px;
-	width: 100%;
+	height: 250px;
 	background: red;
 }
 
