@@ -31,7 +31,7 @@ function rememberTypeOfDesign() {
 function rememberTypeOfLayout() {
     typeOfLayout = +prompt('Выберите верстку (1 - Адаптивная, 2 - Фиксированная)', 'Например: 1');
     while (typeOfLayout == '' || typeOfLayout == null || isNaN(typeOfLayout) || typeOfLayout > 2) {
-        typeOfLayout = +prompt('Выберите верстку (1 - Адаптивная, 2 - Фиксированная'), 'Например: 1');
+        typeOfLayout = +prompt('Выберите верстку (1 - Адаптивная, 2 - Фиксированная)', 'Например: 1');
     }
 };
 
