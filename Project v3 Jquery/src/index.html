@@ -181,25 +181,29 @@
                      </div>
                      <div class="mb-3">
                         <h3>ТИП САЙТА</h3>
-                        <select class="form-select" aria-label="Default select example">
-                           <option selected>Выберите пункт...</option>
+                        <select id="TypeSite" class="form-select" aria-label="Default select example">
+                           <option value="1" selected>Сайт-визитка</option>
+                           <option value="2">Корпоративный сайт</option>
+                           <option value="3">Интернет-мазагин</option>
                          </select>
                          <h3>ДИЗАЙН</h3>
-                         
-                         <select class="form-select" aria-label="Default select example">
-                            <option selected>Выберите пункт...</option>
+                         <select id="Design" class="form-select" aria-label="Default select example">
+                           <option value="1" selected>Уникальный дизайн</option>
+                           <option value="2">Шаблонный дизайн</option>
+                           <option value="3">Смешанный дизайн</option>
                           </select>
                           <h3>АДАПТИВНОСТЬ</h3>
-                          <select class="form-select" aria-label="Default select example">
-                             <option selected>Выберите пункт...</option>
+                          <select id="Adaptive" class="form-select" aria-label="Default select example">
+                           <option value="1" selected>Адаптивная</option>
+                           <option value="2">Фиксированная</option>
                            </select>
-                      </div>
+                      </div>  
                       <div class="Price__Footer col-8 w-100">   
-                        <p>Сроки <span>0</span></p>
-                        <p>Стоимость <span>0</span></p>
+                        <p>Сроки <span id="Time">0</span></p>
+                        <p>Стоимость <span id="Price">0</span></p>
                      </div>
                      <div class="Price__Footer col-6 col-sm-4 col-xl-2 w-40 h-20 mx-auto ">
-                        <button type="submit" class="btn btn-primary">Оставить заявку</button>
+                        <button id="PriceCalculator" type="button" class="btn btn-primary">Оставить заявку</button>
                      </div>
                   </form>
                </div>
@@ -341,7 +345,7 @@
    </footer>
 
    </body>
-  
+   <script src="../src/js/jquery-3.6.0.min.js"></script>
    <script src="../src/js/bootstrap.bundle.min.js"></script>
    <script>
       window.onload = function () {
