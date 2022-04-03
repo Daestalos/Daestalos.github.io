@@ -334,9 +334,13 @@ nav {
 .Skills__List{
 	opacity: 0;
 }
-.Skills__List.show-animation{
+.Skills__List{
 	padding: 80px 40px 0px 40px;
 	width: 25%;
+	opacity: 0;
+}
+
+.Skills__List.show-animation{
 	transition: 1s;
 	-moz-animation: SkillsAndStatisticsTransition 1s 1s forwards;
 	-o-animation: SkillsAndStatisticsTransition 1s 1s forwards;
@@ -361,14 +365,14 @@ nav {
 }
 
 @media screen and (max-width: 2000px) {
-	.Skills__Container{
+	.Skills__List.show-animation{
 		padding: 0px 200px;
 	}
 
 }
 
 @media screen and (max-width: 1600px) {
-	.Skills__Container{
+	.Skills__List.show-animation{
 		padding: 0px 70px;
 	}
 
@@ -429,7 +433,7 @@ nav {
 
 .Case {
 	width: 100%;
-	height: 1400px;
+	height: 1350px;
 	background-color: #fcfdfd;
 }
 
@@ -497,7 +501,17 @@ nav {
     height: 5rem;
 }
 
+@media screen and (max-width: 1350px) {
+	.Case {
+		height: 1250px;
+	}
+}
 
+@media screen and (max-width: 1200px) {
+	.Case {
+		height: 1150px;
+	}
+}
 
 /* Price */
 
