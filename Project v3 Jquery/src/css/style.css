@@ -241,9 +241,9 @@ nav {
 }
 .About__Header p{
 	margin-left: -500px;
-	-moz-animation: AboutAnimation 2s forwards;
+	/* -moz-animation: AboutAnimation 2s forwards;
 	-o-animation: AboutAnimation 2s forwards;
-	animation: AboutAnimation 2s forwards;
+	animation: AboutAnimation 2s forwards; */
 }
 .About__Img img{
 	padding: 60px 0px 25px 0px;
@@ -259,13 +259,13 @@ nav {
 	font-size: medium;
 	color: #3f495a;
 	padding-bottom: 42px;
-	margin-left: 500px;
-	-moz-animation: AboutAnimation 2s forwards;
+	/* margin-left: 500px; */
+	/* -moz-animation: AboutAnimation 2s forwards;
 	-o-animation: AboutAnimation 2s forwards;
-	animation: AboutAnimation 2s forwards;
+	animation: AboutAnimation 2s forwards; */
 }
 
-.About__Text p:nth-child(1){
+/* .About__Text p:nth-child(1){
 	margin-left: 500px;
 	-moz-animation: AboutAnimation 2s forwards;
 	-o-animation: AboutAnimation 2s forwards;
@@ -276,7 +276,7 @@ nav {
 	-moz-animation: AboutAnimation 2s forwards;
 	-o-animation: AboutAnimation 2s forwards;
 	animation: AboutAnimation 2s forwards;
-}
+} */
 .About input {
 	position: relative;
 	left: 50%;
@@ -293,6 +293,25 @@ nav {
 	background: #344051;
 	color: white;
 }
+
+.element-animation {
+    opacity: 0;
+}
+
+.element-animation.show-animation{
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+/* .About__Animanion {
+	opacity: 0;
+}
+.About__Animanion.About__Animanion-show{
+    opacity: 1;
+    transition: opacity 1s;
+	margin: 0;
+}  */
+
 @keyframes rotateImg {
 	0% {
 		transform: perspective(1000px) rotateY(0deg);
@@ -301,7 +320,7 @@ nav {
 		transform: perspective(1000px) rotateY(360deg);
    }
 }
-@keyframes AboutAnimation {
+/* @keyframes AboutAnimation {
 	from{
 		opacity: 0;
    }
@@ -309,7 +328,8 @@ nav {
 		opacity: 1;
 		margin: 0;
    }
-}
+} */
+
 
 
 

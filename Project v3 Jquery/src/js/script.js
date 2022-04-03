@@ -2,6 +2,27 @@
 
 $(document).ready(function(){
 
+
+
+
+
+    // отложенная анимация
+    let options = {threshold: [0.5]};
+    // создаем observer
+    let observer = new IntersectionObserver(onEnrtry, options);
+    // создадим еще одну переменную
+    // к примеру, возьмем, что для всех наших анимаций, для всех элементов, которые мы анимируем зададим класс  .element-animation, соответственно для всех элементов с классом .element-animation у нас будет срабатывать данный скрипт
+    let elements = $('.element-animation');
+    elements.each((i, el) => {
+        observer.observe(el);
+    });
+
+
+
+
+
+
+
     // Калькулятор цены
     $('#PriceCalculator').click( () => {
         let TypeSite =  $('#TypeSite').val(),
@@ -41,3 +62,13 @@ $(document).ready(function(){
     });
 
 });
+
+function onEnrtry (entry){
+    //
+    entry.forEach(change => {
+        // если change (наш элемент) попал в наблюдатель, т.е. сработал threshold
+        if (change.isIntersecting){}
+        // то для нашего change, т.е. для нашего элемента добавляем класс show-animation
+        change.target.classList.add('.show-animation');
+    });
+}
