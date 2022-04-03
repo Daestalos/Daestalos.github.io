@@ -4,6 +4,7 @@
       <meta charset="UTF-8">
       <link rel="stylesheet" href="css\reset.css">
       <link rel="stylesheet" href="css\bootstrap.min.css">
+      <link rel="stylesheet" href="css/magnific-popup.css">
       <link rel="stylesheet" href="css\style.css">
       
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +13,29 @@
    <body>
 
      <!-- Прелоадер -->
-  <!-- <div class="Preloader">
+  <div class="Preloader">
    <div class="Preloader__Row">
    </div>
- </div> -->
+ </div>
+
+ <div id="myModal" class="modal fade" tabindex="-1">
+   <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+           <div class="modal-header">
+               <h5 class="modal-title">Готовы оставить заявку?</h5>
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+           </div>
+           <div class="modal-body">
+               <p>Оставьте заявку сейчас и получите скидку 10% на первоначальный заказ</p>
+           </div>
+           <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal" id="ModalNotReady">Не готов</button>
+               <button type="button" class="btn btn-primary" id="ModalReady">Готов</button>
+           </div>
+       </div>
+   </div>
+</div>
+
 
  <!-- Основной контент страницы -->
 
@@ -27,12 +47,12 @@
                   <div class=" px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
                      <div class="menu">
                      <ul>
-                        <li><a href="#">Обо мне</a></li>
-                        <li><a href="#">Услуги</a></li>
-                        <li><a href="#">Кейсы</a></li>
-                        <li><a href="#">Прайс</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#About">Обо мне</a></li>
+                        <li><a href="#Skills">Услуги</a></li>
+                        <li><a href="#Case">Кейсы</a></li>
+                        <li><a href="#Price">Прайс</a></li>
+                        <li><a href="#Review">Отзывы</a></li>
+                        <li><a href="#Contacts">Контакты</a></li>
                      </ul>
                      </div>
                   </div>
@@ -43,12 +63,12 @@
                         </a>
                       
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                           <li><a class="dropdown-item" href="#">Обо мне</a></li>
-                           <li><a class="dropdown-item" href="#">Услуги</a></li>
-                           <li><a class="dropdown-item" href="#">Кейсы</a></li>
-                           <li><a class="dropdown-item" href="#">Прайс</a></li>
-                           <li><a class="dropdown-item" href="#">Отзывы</a></li>
-                           <li><a class="dropdown-item" href="#">Контакты</a></li>
+                           <li><a class="dropdown-item" href="#About">Обо мне</a></li>
+                           <li><a class="dropdown-item" href="#Skills">Услуги</a></li>
+                           <li><a class="dropdown-item" href="#Case">Кейсы</a></li>
+                           <li><a class="dropdown-item" href="#Price">Прайс</a></li>
+                           <li><a class="dropdown-item" href="#Review">Отзывы</a></li>
+                           <li><a class="dropdown-item" href="#Contacts">Контакты</a></li>
                         </ul>
                       </div>
                   </div>
@@ -71,19 +91,21 @@
             </div>
          </div>
       </section>
+
+
      
-      <section class="About">
+      <section class="About" id="About">
          <div class="container">
             <div class="row h-100">
                <div class="About__Header col-4 col-xl-2 mx-auto">
-                  <p class="Header__Text">ОБО МНЕ</p>
+                  <p class="Header__Text About__Text-animanion">ОБО МНЕ</p>
                </div>
                <div class="About__Img col-2 w-100 mx-auto">
-                  <img class="" src="img/boycircle.png" alt="">
+                  <img class="About__Img-Animation" src="img/boycircle.png" alt="">
                </div>
                <div class="About__Text col-11 col-md-10 col-lg-8 mx-auto">
-                  <p class="element-animation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nesciunt possimus distinctio ratione aut libero ab magni eius praesentium dignissimos dolore perferendis ea, accusamus quos reiciendis eaque consequuntur nihil repellat veritatis, eum alias. Amet id ducimus, consectetur unde quam praesentium modi non voluptas ex aliquam placeat quos voluptate. Facere fugit sed dolores obcaecati, soluta enim perspiciatis dolore animi iusto amet minus quaerat repudiandae! Neque voluptatem dolores accusantium corrupti commodi cumque possimus voluptas asperiores provident voluptates labore quia expedita reiciendis autem, tempora excepturi esse, est sed perspiciatis ex reprehenderit! Veritatis, nostrum perspiciatis modi dignissimos fugit sit consectetur. Nam odio debitis eius.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cum quo consequuntur ipsa distinctio maiores atque blanditiis reiciendis adipisci molestiae.</p>
+                  <p class="About__Text-animanion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cum quo consequuntur ipsa distinctio maiores atque blanditiis reiciendis adipisci molestiae.</p>
+                  <p class="About__Text-animanion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cum quo consequuntur ipsa distinctio maiores atque blanditiis reiciendis adipisci molestiae.</p>
                </div>
                <div class="col-2 mx-auto w-100">
                   <input type="button" value="Скачать резюме">
@@ -94,7 +116,7 @@
 
       <!-- НА ФЛЕКСАХ -->
 
-      <section class="Skills">
+      <section class="Skills" id="Skills">
          <div class="Skills__Container">
             <div class="Skills__Header">
                <p class="Header__Text">ЧТО Я УМЕЮ</p>
@@ -124,7 +146,7 @@
          </div>
       </section>
       
-      <section class="Case">
+      <section class="Case" id="Case">
          <div class="container">
             <div class="row h-80">
                <div class="Case__Header w-100 col-4 col-xl-2 mx-auto">
@@ -133,11 +155,38 @@
                <div class="Case__Text col-8 mx-auto">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, numquam.</p>
                </div>
-               <div class="Case__Image col-12">
-                  <img src="./img/Case.png" alt="">
-               </div>
+
             </div>
             <div class="row h-100">
+               
+               <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active Case__Image col-12">
+                      <img src="./img/Case.png" href="./img/Case.png" class="image-link d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                     <img src="./img/Case.png" href="./img/Case.png" class="image-link d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                     <img src="./img/Case.png" href="./img/Case.png" class="image-link d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
+                </div>
+
+
+
+
+               <!-- <div class="Case__Image col-12">
+                  <img src="./img/Case.png" alt="">
+               </div> -->
                <div class="Case__Body__Left col-2 w-20 d-none d-lg-block"> 
                      <h2>CLIENT:</h2>
                      <p>Какая компания</p>
@@ -168,10 +217,10 @@
                   <input type="button" value="VISIT LIVE SITE">
                </div>
             </div>
-   
+         </div>
       </section>
 
-      <section class="Price">
+      <section class="Price" id="Price">
          <div class="container h-100 d-flex justify-content-center">
             <div class="row h-100 w-100 ">
                <div class="Price__Container col-10">
@@ -199,8 +248,8 @@
                            </select>
                       </div>  
                       <div class="Price__Footer col-8 w-100">   
-                        <p>Сроки <span id="Time">0</span></p>
-                        <p>Стоимость <span id="Price">0</span></p>
+                        <p>Сроки <span id="TimeValue">0</span></p>
+                        <p>Стоимость <span id="PriceValue">0</span></p>
                      </div>
                      <div class="Price__Footer col-6 col-sm-4 col-xl-2 w-40 h-20 mx-auto ">
                         <button id="PriceCalculator" type="button" class="btn btn-primary">Оставить заявку</button>
@@ -211,43 +260,96 @@
          </div>
       </section>
 
-      <section class="Statistics">
+      <section class="Statistics" id="Statistics">
          <div class="container">
             <div class="row d-sm-flex justify-content-center">
                <div class="Statistics__Header w-100 col-4 col-xl-2 mx-auto">
-                  <p class="Header__Text">КЕЙСЫ</p>
+                  <p class="Header__Text">НЕМНОГО СТАТИСТИКИ</p>
                </div>
                <div class="Statistics__List col-8 col-sm-6 col-lg-3 p-5">
                   <img src="./img/StatisticsSmile.png" alt="">
-                  <p class="Statistics__List__Subtitle">120</p>
+                  <p class="Statistics__List__Subtitle" data-count="120">0</p>
                   <p class="Statistics__List__Text">Счастливых клиентов</p>
                </div>
                <div class="Statistics__List col-8 col-sm-6 col-lg-3 p-5">
                   <img src="./img/StatisticsSign.png" alt="">
-                  <p class="Statistics__List__Subtitle">4,600</p>
+                  <p class="Statistics__List__Subtitle" data-count="4600">0</p>
                   <p class="Statistics__List__Text">Часов работы</p>
                </div>
                <div class="Statistics__List col-8 col-sm-6 col-lg-3 p-5">
                   <img src="./img/StatisticsTick.png" alt="">
-                  <p class="Statistics__List__Subtitle">340</p>
+                  <p class="Statistics__List__Subtitle" data-count="340">0</p>
                   <p class="Statistics__List__Text">Проектов завершено</p>
                </div>
                <div class="Statistics__List col-8 col-sm-6 col-lg-3 p-5">
                   <img src="./img/StatisticsCup.png" alt="">
-                  <p class="Statistics__List__Subtitle">23</p>
+                  <p class="Statistics__List__Subtitle" data-count="23">0</p>
                   <p class="Statistics__List__Text">Наград получено</p>
                </div>
             </div>
          </div>
       </section>
 
-      <section class="Review">
+      <section class="Review" id="Review">
          <div class="container">
             <div class="row d-flex justify-content-center">
                <div class="Review__Header w-100 col-4 col-xl-2 mx-auto">
                   <p class="Header__Text">ОТЗЫВЫ</p>
                </div>
-               <div class="col-2 w-100 mx-auto">
+
+               <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                     <div class="col-2 w-100 mx-auto">
+                        <img src="./img/ReviewPhoto.png" alt="">
+                     </div>
+                     <div class="Review__Body col-8 w-100">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae doloremque magnam ex culpa aliquid consectetur totam exercitationem consequuntur repudiandae atque.</p>
+                     </div>
+                     <div class="Review__Body col-3 w-100">
+                        <p> <b> Михаил </b>, Ген директор ПАО "Газпром".</p>
+                     </div>
+                    </div>
+                    <div class="carousel-item">
+                     <div class="col-2 w-100 mx-auto">
+                        <img src="./img/ReviewPhoto.png" alt="">
+                     </div>
+                     <div class="Review__Body col-8 w-100">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae doloremque magnam ex culpa aliquid consectetur totam exercitationem consequuntur repudiandae atque.</p>
+                     </div>
+                     <div class="Review__Body col-3 w-100">
+                        <p> <b> Михаил </b>, Ген директор ПАО "Газпром".</p>
+                     </div>
+                    </div>
+                    <div class="carousel-item">
+                     <div class="col-2 w-100 mx-auto">
+                        <img src="./img/ReviewPhoto.png" alt="">
+                     </div>
+                     <div class="Review__Body col-8 w-100">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae doloremque magnam ex culpa aliquid consectetur totam exercitationem consequuntur repudiandae atque.</p>
+                     </div>
+                     <div class="Review__Body col-3 w-100">
+                        <p> <b> Михаил </b>, Ген директор ПАО "Газпром".</p>
+                     </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
+                </div>
+
+
+               <!-- <div class="col-2 w-100 mx-auto">
                   <img src="./img/ReviewPhoto.png" alt="">
                </div>
                <div class="Review__Body col-8 w-100">
@@ -269,13 +371,13 @@
                      <input type="radio" name="radio">
                      <span class="Review__Checkmark"></span>
                   </label>
-               </div>
+               </div> -->
             </div>
            
          </div>
       </section>
 
-      <section class="Contacts">
+      <section class="Contacts" id="Contacts">
          <div class="container">
             <div class="row">
                <div class="Contacts__Header w-100 col-4 col-xl-2 mx-auto">
@@ -326,7 +428,7 @@
          <div class="container-fluid">
             <div class="row">
                <div class="col">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75238.46684793955!2d27.523157469202452!3d53.892611934152065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1646598005570!5m2!1sru!2sby" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75238.46684793955!2d27.523157469202452!3d53.892611934152065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1646598005570!5m2!1sru!2sby" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                </div>
             </div>
          </div>
@@ -346,7 +448,9 @@
 
    </body>
    <script src="../src/js/jquery-3.6.0.min.js"></script>
+   
    <script src="../src/js/bootstrap.bundle.min.js"></script>
+   <script src="../src/js/jquery.magnific-popup.js"></script>
    <script>
       window.onload = function () {
         document.body.classList.add('Loaded__Hidden');
