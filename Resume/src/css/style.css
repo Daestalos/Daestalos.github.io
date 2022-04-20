@@ -163,7 +163,7 @@ body {
 	color: #2c384a;
 	text-align: left;
 	width: 100%;
-	
+
 }
 
 .Title__Container img{
@@ -201,10 +201,15 @@ body {
 	animation: titlemove 2.4s ease;
 }
 
+.Title__Image__Content{
+	overflow: hidden;
+}
+
 .Title__Image{
 	margin-top: 120px;
 	border: 2px solid black;
-	transform: rotate(30deg);
+	transform: rotate(30deg);	
+	width: 100%;
 }
 
 .Title__Image img{
@@ -214,6 +219,7 @@ body {
     background-color: var(--main-color-2);
     border-radius: 80px;
     z-index: 4;
+	max-width: 100%;
 }
 
 .Title__Container input {
@@ -293,27 +299,8 @@ body {
 }
 
 @media (max-width: 991px) {
-	.Title__Container, .Title__Container h4, .Title__Container input{
-		color:white;
-		position: relative;
-		z-index: 3;
-	}
-	.Title__Container input{
-		border: 2px solid white;
-	}
-	.Main{
-		position: relative;
-	}
-	.Main::after{
-		content: "";
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		position: absolute;
-		background: rgba(0, 0, 0, 0.4)
-	}
- }
+
+}
 
 
 /* ----------------------------------------------------------------- About --------------------------------------------------------------- */
