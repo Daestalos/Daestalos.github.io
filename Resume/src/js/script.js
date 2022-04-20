@@ -10,6 +10,7 @@ window.addEventListener("scroll", stickyHeader);
 
 $(document).ready(function(){
 
+
     /* magnificPopup */
 
     $(document).ready(function() {

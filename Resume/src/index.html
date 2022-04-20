@@ -50,9 +50,8 @@
                      <ul>
                         <li><a href="#About">Обо мне</a></li>
                         <li><a href="#Skills">Навыки</a></li>
-                        <li><a href="#Case">Кейсы</a></li>
-                        <li><a href="#Price">Прайс</a></li>
-                        <li><a href="#Review">Отзывы</a></li>
+                        <li><a href="#Case">Портфолио</a></li>
+                        <li><a href="#Testimonials">Отзывы</a></li>
                         <li><a href="#Contacts">Контакты</a></li>
                      </ul>
                      </div>
@@ -80,8 +79,6 @@
 
 
       <main>
-
-         
       <section class="Main">
          <div class="container h-100">
             <div class="row h-100 d-flex">
@@ -93,7 +90,7 @@
                      
                      <div class="col-lg-8">
                         <input type="button" onclick="window.location.href='#Contacts'" value="Мои контакты">
-                        <input type="button" href="#Contacts" value="Мои работы">       
+                        <input type="button" onclick="window.location.href='#Case'" value="Мои работы">       
                      </div>
                      <img src="../src/img/pointdown.png">
                   </div>  
@@ -110,11 +107,6 @@
             </div>
          </div>
       </section>
-
-
-      <!--------------------------------------------------------------------------------------------------------------------------------------------->
-      <!------------------------------------------------------------------- ABOUT ------------------------------------------------------------------->
-      <!--------------------------------------------------------------------------------------------------------------------------------------------->
 
       <section class="About" id="About">
          <div class="container">
@@ -161,12 +153,8 @@
             </div>
          </div>    
       </section>
-
-      <!---------------------------------------------------------------------------------------------------------------------------------------------->
-      <!------------------------------------------------------------------- SKILLS ------------------------------------------------------------------->
-      <!---------------------------------------------------------------------------------------------------------------------------------------------->
-
-      <section class="Skills" id="Skills">
+      <a class="Skills__Href" id="Skills"></a>
+      <section class="Skills">
          <div class="container-fluid">
             <div class="row h-100 d-flex justify-content-evenly">
                <div class="Skills__Header col-12 d-flex justify-content-center text-align-center">
@@ -178,7 +166,7 @@
                      <img src="../src/img/design-icon.png">
                      <h1>Веб Дизайн</h1>
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores suscipit nobis dolore?</p>
-                     <a href="#">Узнать больше</a> 
+                     <a href="#Contacts">Узнать больше</a> 
                      
                </div>
                
@@ -186,25 +174,22 @@
                     <img src="../src/img/code-icon.png">
                     <h1>Веб Разработка</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores suscipit nobis dolore?</p>
-                    <a href="#">Узнать больше</a> 
+                    <a href="#Contacts">Узнать больше</a> 
                </div>
                <div class="Skills__Services col-3">
                      <img src="../src/img/app-icon.png">
                      <h1>CEO-оптимизация</h1>
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores suscipit nobis dolore?</p>
-                     <a href="#">Узнать больше</a> 
+                     <a href="#Contacts">Узнать больше</a> 
                </div>
                <img class="Skills__Arrow" src="../src/img/arrowright.png">
             </div>
          </div>
       </section>
-
-      <!-------------------------------------------------------------------------------------------------------------------------------------------->
-      <!------------------------------------------------------------------- CASE ------------------------------------------------------------------->
-      <!-------------------------------------------------------------------------------------------------------------------------------------------->
       
-      <section class="Case" id="Case">
-         <img class="Case__IMG" src="../src/img/15.webp">
+      <section class="Case">
+         <a class="Case__Href" id="Case"></a>
+         <img class="Case__IMG" src="../src/img/5.png">
          <div class="container">
             <div class="row h-80">
                <div class="Case__Header w-100 col-4 col-xl-2 d-flex justify-content-evenly">
@@ -217,7 +202,7 @@
                   <div class="carousel-inner">
 
                     <div class="carousel-item active Case__Image col-12">
-                      <img src="./img/Case.png" href="./img/Case.png" class="image-link d-block w-100" alt="...">
+                      <img src="./img/web3.png" href="./img/web3.png" class="image-link d-block w-100" alt="...">
                       <div class="card-body">
                         <h1>Card title</h1>
                         <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -226,7 +211,7 @@
                     </div>
 
                     <div class="carousel-item Case__Image ">
-                     <img src="./img/Case.png" href="./img/Case.png" class="image-link d-block w-100" alt="...">
+                     <img src="./img/web2.jpg" href="./img/web2.jpg" class="image-link d-block w-100" alt="...">
                      <div class="card-body">
                         <h1 class="card-title">Card title</h1>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -235,7 +220,7 @@
                     </div>
 
                     <div class="carousel-item Case__Image ">
-                     <img src="./img/Case.png" href="./img/Case.png" class="image-link d-block w-100" alt="...">
+                     <img src="./img/web1.webp" href="./img/web1.webp" class="image-link d-block w-100" alt="...">
                      <div class="card-body">
                         <h1>Card title</h1>
                         <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -261,7 +246,8 @@
          </div>
       </section>
 
-      <section class="Testimonials" id="Testimonials">
+      <section class="Testimonials" >
+         <a class="Testimonials__Href" id="Testimonials"></a>
          <img class="Testimonial__IMG" src="../src/img/4.webp">
          <div class="container-fluid h-100">
             <div class="row h-100 justify-content-end">
@@ -329,16 +315,18 @@
          </div>
       </section>
 
-      
-      <section class="Contacts" id="Contacts">
+      <section class="Contacts">
+         
          <div class="container-fluid h-100">
             <div class=" row justify-content-center h-100">
                <div class="Contacts__Text col-4">
+                  <a class="Contacts__Href" id="Contacts"></a>
                   <h4>КОНТАКТЫ</h4>
                   <h1>Запишись на бесплатную консультацию</h1>
                   <img src="../src/img/131.png">
                </div>
                <div class="Contacts__Body col-4">
+                 
                   <form class="Contacts__Form">
                      <h1>Оставь мне сообщение</h1>
                      <input type="text" name="name" placeholder="Как вас зовут?">

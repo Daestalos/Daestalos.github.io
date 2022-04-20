@@ -3,19 +3,6 @@ body {
 }
 
 :root {
-	/* --main-color-1: hsl(257, 100%, 60%);
-	--main-color-2: hsl(47, 100%, 61%);
-	--main-color-3: hsl(60, 4%, 11%);
-	--bg-color-1: hsl(257, 100%, 97%);
-	--bg-color-2: #fff;
-	--bg-color-3: hsl(257, 100%, 98%);
-	--bg-color-transparent: rgba(255, 255, 255, 0.5);
-	--heading-color: hsl(257, 61%, 24%);
-	--heading-border: hsl(39, 100%, 50%);
-	--text-color: hsl(257, 33%, 58%);
-	--text-color-black: black;
-	--section-padding: 7rem; */
-
 	--main-color-2: hsl(47, 100%, 61%);
 	--main-color-1: hsl(60, 4%, 11%);
 	--bg-color-1: hsl(257, 100%, 97%);
@@ -526,6 +513,9 @@ body {
 /* ----------------------------------------------------------------- Skills --------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
+.Skills__Href{
+	position: absolute;
+}
 
 .Skills {
 	width: 100%;
@@ -629,7 +619,10 @@ body {
 /* ----------------------------------------------------------------- Case ----------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
-
+.Case__Href{
+	position: absolute;
+	top: -40px;
+}
 
 .Case {
 	width: 100%;
@@ -639,7 +632,10 @@ body {
 }
 
 .Case__IMG{
-	position: absolute;
+    position: absolute;
+    right: 54px;
+    bottom: 320px;
+    transform: rotate(-90deg);
 }
 
 .Case__Header{
@@ -749,6 +745,11 @@ body {
 	background: var(--bg-color-1);
 }
 
+.Testimonials__Href{
+	position: absolute;
+	top: -150px;
+}
+
 .Testimonials__Content{
 	border: 3px solid black;
 }
@@ -839,6 +840,7 @@ body {
 
 .carousel-inner img{
 	padding: 45px 0px;
+	border-radius: 120px;
 }
 
 .carousel-indicators{
@@ -860,7 +862,10 @@ body {
 /* ----------------------------------------------------------------- Contacts ----------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
-
+.Contacts__Href{
+	position: absolute;
+	top: -70px;
+}
 .Contacts {
 	width: 100%;
 	height: 1000px;
@@ -870,6 +875,7 @@ body {
 
 .Contacts__Text{
 	margin-top: 10%;
+	position: relative;
 }
 
 .Contacts__Text h4 {
