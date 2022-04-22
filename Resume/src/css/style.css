@@ -201,23 +201,15 @@ body {
 	animation: titlemove 2.4s ease;
 }
 
-.Title__Image__Content{
-	overflow: hidden;
-}
 
 .Title__Image{
-	margin-top: 120px;
-	border: 2px solid black;
-	transform: rotate(30deg);	
+	margin-top: 120px;	
 	width: 100%;
 }
 
 .Title__Image img{
-    transform: rotate(-30deg);
     position: relative;
     top: -80px;
-    background-color: var(--main-color-2);
-    border-radius: 80px;
     z-index: 4;
 	max-width: 100%;
 }
