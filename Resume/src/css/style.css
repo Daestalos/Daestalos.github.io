@@ -1,6 +1,4 @@
-body {
-	font-family: 'Arial', sans-serif;
-}
+
 
 :root {
 	--main-color-2: hsl(47, 100%, 61%);
@@ -17,6 +15,10 @@ body {
 
 	--button-color-1: #ffda01;
 	--button-color-2: #1d1d1b;
+}
+body {
+	font-family: 'Arial', sans-serif;
+	background: var(--bg-color-1);
 }
 
 ::selection {
@@ -288,10 +290,6 @@ body {
 }
 .menu li:nth-child(6){
 	animation-delay: 2s;
-}
-
-@media (max-width: 991px) {
-
 }
 
 
@@ -741,14 +739,13 @@ body {
 	background: var(--bg-color-2);
 	
 }
-.Testimonial__IMG{
+.Testimonial__IMG {
     position: absolute;
-	bottom: -20px;
-    left: 120px;
+    bottom: -161px;
+    left: -13px;
     z-index: 3;
-    height: 400px;
-    width: 400px;
-	
+    height: 500px;
+    width: 500px;
 }
 
 .Testimonials__Text{
@@ -828,6 +825,7 @@ body {
 
 .Testimonials__Slider p{
 	text-align: center;
+	font-size: 20px;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -952,7 +950,9 @@ body {
 	transform: scale(1.1, 1.1);
 }
 
-
+.Contacts__Text img{
+	width: 100%;
+}
 
 /* Google */
 
@@ -981,3 +981,99 @@ body {
 margin-right: auto;
 width: 50%;
 */
+
+@media (max-width: 2100px) {
+	.Testimonial__IMG {
+		position: absolute;
+		bottom: -179px;
+		left: 50px;
+		z-index: 3;
+		height: 475px;
+		width: 475px;
+	}
+	.Contacts{
+		margin-top: 50px;
+	}
+}
+@media (max-width: 1880px) {
+	.Title__Container h1 {
+		font-size: 54px;
+	}
+	.Case__IMG {
+		right: -82px;
+		bottom: 322px;
+	}
+	.Contacts{
+		margin-top: 100px;
+	}
+}
+@media (max-width: 1600px){
+	.Title__Container h1 {
+		font-size: 45px;
+	}
+	.Title__Image img {
+		max-width: 90%;
+		float: right;
+	}
+	.Case__IMG {
+		right: -82px;
+		bottom: 724px;
+	}
+	.Testimonial__IMG {
+		left: -80px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.Title__Container {
+	padding-left: 100px;
+	}
+	.Title__Container img {
+		left: 40px;
+	}
+	.Title__Image img {
+		max-width: 100%;
+		float: right;
+	}
+	.Title__Container h1 {
+		font-size: 45px;
+	}
+
+	.Main{
+		height: 840px;
+	}
+
+	.Testimonials__Slider {
+		height: 63%;
+	}
+	.Testimonials {
+		height: 685px;
+	}
+	.Testimonial__IMG {
+		bottom: -90px;
+	}
+}
+@media (max-width: 1200px){
+	.Contacts__Text h1 {
+		font-size: 55px;
+	}
+	.Testimonials__Slider {
+		height: 65%;
+	}
+	.Testimonials__Text h4 {
+		font-size: 22px;
+		margin: 30px 0px 0px 30px;
+	}
+	.Testimonials__Text h1 {
+		font-size: 55px;
+		margin: 0px 0px 0px 30px;
+	}
+	.Testimonials__Text a {
+		margin: 30px 0px 0px 30px;
+	}
+}
+@media (max-width: 950px){
+	.Contacts__Text h1 {
+		font-size: 45px;
+	}
+}

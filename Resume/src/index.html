@@ -44,8 +44,8 @@
       <header>
          <nav class="Header">
             <div class="container">
-               <div class="row">
-                  <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 d-none d-lg-block">
+               <div class="row d-flex justify-content-center justify-content-lg-start">
+                  <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 d-flex justify-content-center justify-content-lg-start">
                      <div class="Menu">
                      <ul>
                         <li><a href="#About">Обо мне</a></li>
@@ -56,22 +56,37 @@
                      </ul>
                      </div>
                   </div>
+                  <!-- d-none d-lg-block -->
+
+                  <!-- <div class="collapse" id="navbarToggleExternalContent">
+                     <div class="p-4">
+                       <h5 class="text-white h4">Collapsed content</h5>
+                       <span class="text-muted">Toggleable via the navbar brand.</span>
+                     </div>
+                   </div>
+                   <nav class="navbar navbar-dark bg-dark">
+                     <div class="container-fluid">
+                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon"></span>
+                       </button>
+                     </div>
+                   </nav> -->
+
+<!-- 
                   <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
                      <div class="dropdown">
                         <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                           Навигация
                         </a>
-                      
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                            <li><a class="dropdown-item" href="#About">Обо мне</a></li>
                            <li><a class="dropdown-item" href="#Skills">Навыки</a></li>
-                           <li><a class="dropdown-item" href="#Case">Кейсы</a></li>
-                           <li><a class="dropdown-item" href="#Price">Прайс</a></li>
-                           <li><a class="dropdown-item" href="#Review">Отзывы</a></li>
+                           <li><a class="dropdown-item" href="#Case">Портфолио</a></li>
+                           <li><a class="dropdown-item" href="#Testimonials">Отзывы</a></li>
                            <li><a class="dropdown-item" href="#Contacts">Контакты</a></li>
                         </ul>
                       </div>
-                  </div>
+                  </div> -->
                </div>
             </div>
          </nav>
@@ -81,17 +96,18 @@
    <main>
       <section class="Main">
          <div class="container-fluid h-100">
-            <div class="row h-100 d-flex justify-content-center">
-               <div class="offset-1 col-4 ">
+            <div class="row h-100 d-flex justify-content-lg-end justify-content-xxl-center">
+               <div class="offset-xxl-1 col-lg-6 col-xxl-4 ">
                   <div class="Title__Container">
                      <h4>Front-end developer</h4>
                      <h1>Александр Бордюг</h1>
                      <p> /* Привет! Я фриланс веб-разработчик *\</p>
-                     <div class="col-lg-8">
+                     <div class="col-lg-12">
                         <input type="button" onclick="window.location.href='#Contacts'" value="Мои контакты">
-                        <input type="button" onclick="window.location.href='#Case'" value="Мои работы"> </div> <img src="../src/img/pointdown.png"> </div>
+                        <input type="button" onclick="window.location.href='#Case'" value="Мои работы"> </div> <img src="../src/img/pointdown.png">
+                     </div>
                </div>
-               <div class="col-lg-6">
+               <div class="col-6 col-xxl-6">
                   <div class="Title__Image"> <img src="../src/img/11-1.png" alt=""> </div>
                </div>
             </div>
@@ -242,7 +258,7 @@
          <img class="Testimonial__IMG" src="../src/img/4.webp">
          <div class="container-fluid h-100">
             <div class="row h-100 justify-content-end">
-               <div class="Testimonials__Content Testimonials__Slider col-4">
+               <div class="Testimonials__Content Testimonials__Slider col-6 col-xl-5">
                   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                      <div class="carousel-indicators">
                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -292,7 +308,7 @@
                      </button>
                   </div>
                </div>
-               <div class="Testimonials__Text col-6">
+               <div class="Testimonials__Text col-5 col-xl-6">
                   <h4>ОТЗЫВЫ</h4>
                   <h1>моих</h1>
                   <h1>cчастливых клиентов</h1>
@@ -310,13 +326,13 @@
          
          <div class="container-fluid h-100">
             <div class=" row justify-content-center h-100">
-               <div class="Contacts__Text col-4">
+               <div class="Contacts__Text offset-lg-1 offset-xxl-0 col-6 col-lg-5 col-xxl-4">
                   <a class="Contacts__Href" id="Contacts"></a>
                   <h4>КОНТАКТЫ</h4>
                   <h1>Запишись на бесплатную консультацию</h1>
                   <img src="../src/img/131.png">
                </div>
-               <div class="Contacts__Body col-4">
+               <div class="Contacts__Body col-6 col-lg-6 col-xxl-4">
                  
                   <form class="Contacts__Form">
                      <h1>Оставь мне сообщение</h1>
