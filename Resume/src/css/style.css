@@ -1,5 +1,3 @@
-
-
 :root {
 	--main-color-2: hsl(47, 100%, 61%);
 	--main-color-1: hsl(60, 4%, 11%);
@@ -12,10 +10,10 @@
 	--text-color: hsl(60, 5%, 16%);
 	--text-color-black: black;
 	--section-padding: 7rem;
-
 	--button-color-1: #ffda01;
 	--button-color-2: #1d1d1b;
 }
+
 body {
 	font-family: 'Arial', sans-serif;
 	background: var(--bg-color-1);
@@ -36,9 +34,9 @@ body {
 	bottom: 0;
 	background: #eeeeee;
 	z-index: 100;
-  }
+}
 
-  .Preloader__Row {
+.Preloader__Row {
 	position: relative;
 	top: 50%;
 	left: 50%;
@@ -49,7 +47,6 @@ body {
 	text-align: center;
 	border-top-color: #344051;
 	border-left-color: #344051;
-
 	animation: spinner 400ms linear infinite;
 	border-bottom-color: transparent;
 	border-right-color: transparent;
@@ -60,21 +57,26 @@ body {
 	display: inline-block;
 	vertical-align: middle;
 	animation: spinner 1s linear infinite;
-  }
+}
 
-  @keyframes spinner {
-	0% { transform: rotate(0deg); }
-	100% { transform: rotate(360deg); }
-  }
+@keyframes spinner {
+	0% {
+		transform: rotate(0deg);
+	}
 
-  .Loaded__Hidden .Preloader {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.Loaded__Hidden .Preloader {
 	transition: 2s opacity;
 	opacity: 0;
-  }
+}
 
-  .Loaded .Preloader {
+.Loaded .Preloader {
 	display: none;
-  }
+}
 
   
 /* ----------------------------------------------------------------- Header ----    ----------------------------------------------------------- */
@@ -93,7 +95,7 @@ body {
 	height: 80px;
 	position: relative;
 	z-index: 5;
-	position: fixed;	
+	position: fixed;
 	background: linear-gradient(90deg, #efd5ff 0%, #ffda01 100%);
 	box-shadow: 0 5px 20px 0.1px rgba(0, 0, 0, 0.1);
 }
@@ -101,6 +103,7 @@ body {
 .Menu {
 	float: left;
 }
+
 .Menu li {
 	float: left;
 	line-height: 60px;
@@ -111,7 +114,8 @@ body {
 	opacity: 0;
 	animation: lifromtop 2s ease forwards;
 }
-.Menu li a{
+
+.Menu li a {
 	padding-top: 10px;
 	color: var(--heading-color);
 	transition: all 0.2s;
@@ -121,7 +125,7 @@ body {
 	font-weight: bold;
 }
 
-.Menu li a::after{
+.Menu li a::after {
 	content: "";
 	position: absolute;
 	width: 0;
@@ -135,20 +139,43 @@ body {
 	transition: 0.3s;
 }
 
-
-.Menu li a:hover::after{
+.Menu li a:hover::after {
 	width: 100%;
 	opacity: 0.2;
 }
 
-
-.Menu li a:active{
+.Menu li a:active {
 	transform: scale(1.1, 1.1);
 }
 
-.white-btn{
+.white-btn {
 	color: white;
 }
+
+.Dropdown__Menu ul li {
+	width: 400px;
+	margin-top: 10px;
+}
+
+.Dropdown__Menu ul li a {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.Dropdown__Menu ul {
+	margin-top: 20px;
+}
+
+.Dropdown__BTN {
+	margin-top: 20px;
+	width: 400px;
+	background: var(--button-color-1)!important;
+	border: 3px solid black;
+	color: var(--text-color)!important;
+	font-weight: bold;
+	font-size: 15px;
+}
+
 
 /* ----------------------------------------------------------------- Main/Title --------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -165,15 +192,14 @@ body {
 	color: #2c384a;
 	text-align: left;
 	width: 100%;
-
 }
 
-.Title__Container img{
-    position: absolute;
-    left: -40px;
-    bottom: -280px;
-    height: 200px;
-    width: 150px;
+.Title__Container img {
+	position: absolute;
+	left: -40px;
+	bottom: -280px;
+	height: 200px;
+	width: 150px;
 }
 
 .Title__Container h1 {
@@ -189,106 +215,116 @@ body {
 	color: var(--heading-color);
 	padding: 2px 16px;
 	margin-top: 40px 0px;
-
 	font-size: 22px;
 	font-weight: bold;
-
 	animation: titlemove 2.4s ease;
 }
 
-.Title__Container p{
+.Title__Container p {
 	color: var(--text-color);
 	font-size: 22px;
 	font-weight: bold;
 	animation: titlemove 2.4s ease;
 }
 
-
-.Title__Image{
-	margin-top: 120px;	
+.Title__Image {
+	margin-top: 120px;
 	width: 100%;
 }
 
-.Title__Image img{
-    position: relative;
-    top: -80px;
-    z-index: 4;
+.Title__Image img {
+	position: relative;
+	top: -80px;
+	z-index: 4;
 	max-width: 100%;
 }
 
 .Title__Container input {
-    height: 50px;
-    text-align: center;
-    border: 3px solid var(--button-color-2);
-    background: var(--button-color-1);
+	height: 50px;
+	text-align: center;
+	border: 3px solid var(--button-color-2);
+	background: var(--button-color-1);
 	color: var(--text-color-black);
-    border-radius: 15px;
-    font-size: 20px;
-    padding: 0px 20px;
-    margin: 15px 15px 0px 0px;
-    transition: all 1s ease;
-
+	border-radius: 15px;
+	font-size: 20px;
+	padding: 0px 20px;
+	margin: 15px 15px 0px 0px;
+	transition: all 1s ease;
 	animation: inputmove 2.4s ease;
 }
-.Title__Container input:hover{
+
+.Title__Container input:hover {
 	background: linear-gradient(90deg, black 0%, black 100%);
 	color: white;
 }
-.Title__Container input:active{
+
+.Title__Container input:active {
 	transform: scale(1.1, 1.1);
 }
 
-@keyframes titlemove{
-	from{
+@keyframes titlemove {
+	from {
 		opacity: 0;
 		margin-left: -500px;
-   }
-	to{
+	}
+
+	to {
 		opacity: 1;
 		margin-left: 0px;
-   }
+	}
 }
-@keyframes inputmove{
-	from{
+
+@keyframes inputmove {
+	from {
 		opacity: 0;
 		margin-top: 500px;
-   }
-	to{
+	}
+
+	to {
 		opacity: 1;
 		margin-top: 0px;
-   }
+	}
 }
+
 @keyframes comming {
 	from {
 		opacity: 0;
-   }
-	to{
+	}
+
+	to {
 		opacity: 1;
-   }
+	}
 }
-@keyframes lifromtop{
-	from{
+
+@keyframes lifromtop {
+	from {
 		opacity: 0;
 		margin-top: -80px;
-   }
-	to{
+	}
+
+	to {
 		opacity: 1;
 		margin-top: 0;
-   }
+	}
 }
-.menu li:nth-child(2){
+
+.menu li:nth-child(2) {
 	animation-delay: 0.4s;
 }
-.menu li:nth-child(3){
+
+.menu li:nth-child(3) {
 	animation-delay: 0.8s;
 }
-.menu li:nth-child(4){
+
+.menu li:nth-child(4) {
 	animation-delay: 1.2s;
 }
-.menu li:nth-child(5){
+
+.menu li:nth-child(5) {
 	animation-delay: 1.6s;
 }
-.menu li:nth-child(6){
+
+.menu li:nth-child(6) {
 	animation-delay: 2s;
 }
 
@@ -314,34 +350,36 @@ body {
 .About > .container {
 	height: 650px;
 }
-.About__Header{
+
+.About__Header {
 	position: relative;
 }
+
 .About__Header img {
-    position: absolute;
-    right: 39px;
-    bottom: 31px;
-    height: 156px;
-    width: 331px;
+	position: absolute;
+	right: 39px;
+	bottom: 31px;
+	height: 156px;
+	width: 331px;
 }
 
-.About__Header h4{
+.About__Header h4 {
 	border-left: 3px solid var(--heading-border);
 	color: var(--heading-color);
-    padding: 0px 10px;
-    margin: 15% 0px 0px 36px;
+	padding: 0px 10px;
+	margin: 15% 0px 0px 36px;
 	font-size: 25px;
 	font-weight: bold;
 }
 
-.About__Header h1{
+.About__Header h1 {
 	color: var(--heading-color);
 	margin: 45px 0px 0px 35px;
 	font-size: 3em;
 	font-weight: bold;
 }
 
-.About__Header p{
+.About__Header p {
 	color: var(--text-color);
 	margin: 8% 0px 0px 35px;
 	font-size: 22px;
@@ -349,24 +387,24 @@ body {
 }
 
 .About__Buttons input {
-    height: 50px;
-    text-align: center;
+	height: 50px;
+	text-align: center;
 	border: 3px solid var(--button-color-2);
-    background: var(--button-color-1);
+	background: var(--button-color-1);
 	color: var(--text-color-black);
-    border-radius: 15px;
-    font-size: 20px;
-    padding: 0px 20px;
-    margin: 20px 15px 0px 35px;
+	border-radius: 15px;
+	font-size: 20px;
+	padding: 0px 20px;
+	margin: 20px 15px 0px 35px;
 	transition: all 1s ease;
 }
 
-.About__Buttons input:hover{
+.About__Buttons input:hover {
 	background: linear-gradient(90deg, black 0%, black 100%);
 	color: white;
 }
 
-.About__Buttons input:active{
+.About__Buttons input:active {
 	transform: scale(1.1, 1.1);
 }
 
@@ -385,7 +423,7 @@ body {
 	margin: 0px 0px 0px 20px;
 }
 
-.About__CV::before{
+.About__CV::before {
 	content: "";
 	position: absolute;
 	width: 0%;
@@ -396,38 +434,38 @@ body {
 	transition: 0.3s ease-in-out;
 }
 
-.About__CV:hover::before{
+.About__CV:hover::before {
 	width: 100%;
 }
 
-.About__CV:visited{
+.About__CV:visited {
 	color: var(--main-color-1);
 }
 
 .About__Div {
 	position: relative;
 	display: grid;
-    grid-template-columns: 0.1fr 2fr 0fr 2fr 0.1fr;
-    grid-template-rows: 0.1fr repeat(2, 2fr) 0.1fr;
-    grid-column-gap: 30px;
+	grid-template-columns: 0.1fr 2fr 0fr 2fr 0.1fr;
+	grid-template-rows: 0.1fr repeat(2, 2fr) 0.1fr;
+	grid-column-gap: 30px;
 	grid-row-gap: 50px;
 	justify-content: center;
 }
 
-.About__Div::before{
-    content: "";
-    position: absolute;
-    width: 235px;
-    height: 235px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 15px solid var(--button-color-1);
-    z-index: 1;
-    opacity: 0.8;
+.About__Div::before {
+	content: "";
+	position: absolute;
+	width: 235px;
+	height: 235px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 15px solid var(--button-color-1);
+	z-index: 1;
+	opacity: 0.8;
 }
 
-.About__Div div{
+.About__Div div {
 	border: 3px solid var(--button-color-2);
 	background: var(--bg-color-2);
 	width: 100%;
@@ -438,24 +476,25 @@ body {
 	justify-content: center;
 	z-index: 2;
 }
-.About__Div div:hover{
+
+.About__Div div:hover {
 	transition: 0.3s;
 	transform: scale(1.1);
 }
 
-.About__Div svg{
+.About__Div svg {
 	height: 50%;
 	width: 50%;
 	fill: orange;
 }
 
-.About__Div path{
+.About__Div path {
 	height: 50%;
 	width: 50%;
 	fill: orange;
 }
 
-.About__Div h2{
+.About__Div h2 {
 	color: var(--heading-color);
 	font-weight: 600;
 	margin-top: 10px;
@@ -465,22 +504,22 @@ body {
 .About__Div div:nth-child(1) {
 	grid-area: 2 / 2 / 3 / 3;
 	border-radius: 40px 40px 0px 40px;
-}	
+}
 
 .About__Div div:nth-child(2) {
-	grid-area: 3 / 2 / 4 / 3; 
+	grid-area: 3 / 2 / 4 / 3;
 	border-radius: 40px 0px 40px 40px;
 }
 
-.About__Div div:nth-child(3) { 
+.About__Div div:nth-child(3) {
 	margin: 30px 0px -30px 0px;
-	grid-area: 2 / 4 / 3 / 5; 
+	grid-area: 2 / 4 / 3 / 5;
 	border-radius: 40px 40px 40px 0px;
 }
 
-.About__Div div:nth-child(4) { 
+.About__Div div:nth-child(4) {
 	margin: 30px 0px -30px 0px;
-	grid-area: 3 / 4 / 4 / 5; 
+	grid-area: 3 / 4 / 4 / 5;
 	border-radius: 0px 40px 40px 40px;
 }
 
@@ -490,7 +529,7 @@ body {
 /* ----------------------------------------------------------------- Skills --------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
-.Skills__Href{
+.Skills__Href {
 	position: absolute;
 }
 
@@ -498,20 +537,18 @@ body {
 	width: 100%;
 	height: 950px;
 	background: var(--bg-color-1);
-	position:relative
+	position: relative;
 }
 
-.Skills__Arrow{
+.Skills__Arrow {
 	position: absolute;
-    height: 944px;
-    width: 100%;
-    bottom: 66px;
-    z-index: 1;
+	height: 944px;
+	width: 100%;
+	bottom: 66px;
+	z-index: 1;
 }
 
-
-
-.Skills__Header{
+.Skills__Header {
 	height: 100px;
 }
 
@@ -519,19 +556,17 @@ body {
 	margin-top: 35px;
 }
 
-.Skills__Header h1>span{
+.Skills__Header h1>span {
 	border-bottom: 3px solid var(--heading-border);
 	color: var(--heading-color);
-    padding: 3px 0px;
-    font-size: 30px;
+	padding: 3px 0px;
+	font-size: 30px;
 	font-weight: bold;
 }
 
-
-.Skills__Services{
+.Skills__Services {
 	margin-top: 50px;
-    height: 600px;
-	width: 25%;
+	height: 600px;
 	border: 3px solid black;
 	background: var(--bg-color-2);
 	border-radius: 50px;
@@ -539,19 +574,19 @@ body {
 	z-index: 2;
 }
 
-.Skills__Services img{
+.Skills__Services img {
 	margin-top: 50px;
 	height: 150px;
 	width: 150px;
 }
 
-.Skills__Services h1{
+.Skills__Services h1 {
 	color: var(--heading-color);
 	font-weight: 600;
 	margin-top: 30px;
 }
 
-.Skills__Services p{
+.Skills__Services p {
 	margin-top: 20px;
 	margin-bottom: 100px;
 	font-size: 20px;
@@ -572,7 +607,7 @@ body {
 	padding: 2px 0;
 }
 
-.Skills__Services a::before{
+.Skills__Services a::before {
 	content: "";
 	position: absolute;
 	width: 0%;
@@ -583,11 +618,11 @@ body {
 	transition: 0.3s ease-in-out;
 }
 
-.Skills__Services a:hover::before{
+.Skills__Services a:hover::before {
 	width: 100%;
 }
 
-.Skills__Services a:visited{
+.Skills__Services a:visited {
 	color: var(--main-color-1);
 }
 
@@ -596,7 +631,7 @@ body {
 /* ----------------------------------------------------------------- Case ----------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
-.Case__Href{
+.Case__Href {
 	position: absolute;
 	top: -40px;
 }
@@ -608,26 +643,26 @@ body {
 	position: relative;
 }
 
-.Case__IMG{
-    position: absolute;
-    right: 54px;
-    bottom: 320px;
-    transform: rotate(-90deg);
+.Case__IMG {
+	position: absolute;
+	right: 54px;
+	bottom: 320px;
+	transform: rotate(-90deg);
 }
 
-.Case__Header{
+.Case__Header {
 	height: 30px;
 }
-.Case__Header h1>span{
+
+.Case__Header h1>span {
 	border-bottom: 3px solid var(--heading-border);
 	color: var(--heading-color);
 	padding: 3px 0px;
-	
 	font-size: 30px;
 	font-weight: bold;
 }
 
-.Case__Text p{
+.Case__Text p {
 	font-size: 20px;
 	color: var(--text-color);
 	font-weight: bold;
@@ -641,30 +676,29 @@ body {
 	border-radius: 50px;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon{
+.carousel-control-next-icon, .carousel-control-prev-icon {
 	width: 5rem;
-    height: 5rem;
+	height: 5rem;
 	fill: var(--main-color-1);
 }
 
 .carousel-control-next, .carousel-control-prev {
-
-    padding: 0;
-    color: var(--main-color-1);
-    opacity: 1;
+	padding: 0;
+	color: var(--main-color-1);
+	opacity: 1;
 }
 
 .carousel-control-next:hover, .carousel-control-prev:hover {
-    color: var(--main-color-1);
+	color: var(--main-color-1);
 }
 
-.card-body h1{
+.card-body h1 {
 	color: var(--heading-color);
 	font-weight: 600;
 	text-align: center;
 }
 
-.card-body p{
+.card-body p {
 	font-size: 20px;
 	color: var(--text-color);
 	font-weight: bold;
@@ -672,29 +706,27 @@ body {
 }
 
 .card-body input {
-    height: 50px;
-    text-align: center;
-    border: 3px;
-    background: var(--main-color-1);
+	height: 50px;
+	text-align: center;
+	border: 3px;
+	background: var(--main-color-1);
 	color: white;
-    border-radius: 15px;
-    font-size: 20px;
-    padding: 0px 20px;
-    margin: 15px auto;
+	border-radius: 15px;
+	font-size: 20px;
+	padding: 0px 20px;
+	margin: 15px auto;
 	transition: all 1s ease;
-
 	display: block;
 }
-.card-body input:hover{
+
+.card-body input:hover {
 	background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
 	color: white;
 }
-.card-body input:active{
+
+.card-body input:active {
 	transform: scale(1.1, 1.1);
 }
-
-
-
 
 @media screen and (max-width: 1350px) {
 	.Case {
@@ -716,48 +748,46 @@ body {
 
 
 
-.Testimonials{
+.Testimonials {
 	position: relative;
 	height: 600px;
 	background: var(--bg-color-1);
 }
 
-.Testimonials__Href{
+.Testimonials__Href {
 	position: absolute;
 	top: -150px;
 }
 
-.Testimonials__Content{
+.Testimonials__Content {
 	border: 3px solid black;
 }
 
-.Testimonials__Slider{
+.Testimonials__Slider {
 	position: relative;
 	top: -15px;
 	height: 70%;
 	border-radius: 15px;
 	background: var(--bg-color-2);
-	
-}
-.Testimonial__IMG {
-    position: absolute;
-    bottom: -161px;
-    left: -13px;
-    z-index: 3;
-    height: 500px;
-    width: 500px;
 }
 
-.Testimonials__Text{
+.Testimonial__IMG {
+	position: absolute;
+	bottom: -161px;
+	left: -13px;
+	z-index: 3;
+	height: 500px;
+	width: 500px;
+}
+
+.Testimonials__Text {
 	position: relative;
 }
 
-
 .Testimonials__Text img {
-    position: absolute;
-    right: 100px;
-    bottom: 0;
-
+	position: absolute;
+	right: 100px;
+	bottom: 0;
 }
 
 .Testimonials__Text h4 {
@@ -776,24 +806,22 @@ body {
 	margin: 0px 0px 0px 100px;
 }
 
-
-
 .Testimonials__Text a {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    background-color: transparent;
-    color: var(--text-color-black);
-    font-weight: 600;
-    font-size: 30px;
-    letter-spacing: 0px;
-    border-bottom: 2.5px solid var(--main-color-2);
-    border-radius: 0px;
-    padding: 0.15rem 0;
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	background-color: transparent;
+	color: var(--text-color-black);
+	font-weight: 600;
+	font-size: 30px;
+	letter-spacing: 0px;
+	border-bottom: 2.5px solid var(--main-color-2);
+	border-radius: 0px;
+	padding: 0.15rem 0;
 	margin: 20px 0px 0px 100px;
 }
 
-.Testimonials__Text a::before{
+.Testimonials__Text a::before {
 	content: "";
 	position: absolute;
 	width: 0%;
@@ -804,33 +832,31 @@ body {
 	transition: 0.3s ease-in-out;
 }
 
-.Testimonials__Text a:hover::before{
+.Testimonials__Text a:hover::before {
 	width: 100%;
 }
 
-.Testimonials__Text a:visited{
+.Testimonials__Text a:visited {
 	color: var(--text-color-black);
 }
 
-
-
-.carousel-inner img{
+.carousel-inner img {
 	padding: 45px 0px;
 	border-radius: 120px;
 }
 
-.carousel-indicators{
+.carousel-indicators {
 	margin-bottom: -3em;
 }
 
-.Testimonials__Slider p{
+.Testimonials__Slider p {
 	text-align: center;
 	font-size: 20px;
 }
 
 .carousel-indicators [data-bs-target] {
 	width: 15px;
-    height: 15px;
+	height: 15px;
 	border-radius: 50%;
 	background-color: var(--main-color-2);
 }
@@ -839,10 +865,11 @@ body {
 /* ----------------------------------------------------------------- Contacts ----------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
-.Contacts__Href{
+.Contacts__Href {
 	position: absolute;
 	top: -70px;
 }
+
 .Contacts {
 	width: 100%;
 	height: 1000px;
@@ -850,7 +877,11 @@ body {
 	background-size: cover;
 }
 
-.Contacts__Text{
+.Contacts .row {
+	height: 100%;
+}
+
+.Contacts__Text {
 	margin-top: 10%;
 	position: relative;
 }
@@ -869,7 +900,7 @@ body {
 	color: var(--text-color-black);
 }
 
-.Contacts__Body{
+.Contacts__Body {
 	height: 70%;
 	margin-top: 10%;
 	background: var(--bg-color-2);
@@ -887,13 +918,13 @@ body {
 
 .Contacts__Form input[type="text"], input[type="tel"], input[type="email"] {
 	border: 3px solid var(--bg-color-3);
-    background: var(--bg-color-3);
+	background: var(--bg-color-3);
 	border-radius: 15px;
 	color: white;
 	padding-left: 20px;
 	margin: 15px auto;
 	height: 57px;
-    width: 80%;
+	width: 80%;
 	font-size: 20px;
 	display: block;
 }
@@ -904,59 +935,62 @@ body {
 
 .Contacts__Form textarea {
 	border: 3px solid var(--bg-color-3);
-    background: var(--bg-color-3);
+	background: var(--bg-color-3);
 	border-radius: 15px;
-    color: white;
-    padding: 10px 0px 0px 20px;
-    font-size: 20px;
-    margin: 15px auto;
-    height: 140px;
-    width: 80%;
+	color: white;
+	padding: 10px 0px 0px 20px;
+	font-size: 20px;
+	margin: 15px auto;
+	height: 140px;
+	width: 80%;
 	display: block;
 }
-.Contacts__Form input[type="submit"] {
-    height: 50px;
-    width: 250px;
-    text-align: center;
-    border: 3px;
-    background: var(--button-color-1);
-    color: var(--button-color-2);
-    border-radius: 8px;
-    font-size: 20px;
-    padding: 0px 20px;
-    margin: 25px auto;
-    transition: all 1s ease;
-    display: block;
-}
 
-.card-body input {
-    height: 50px;
-    text-align: center;
-    border: 3px;
-    background: var(--button-color-1);
-	color: var(--text-color);
-    border-radius: 8px;
-    font-size: 20px;
-    padding: 0px 20px;
-    margin: 15px auto;
+.Contacts__Form input[type="submit"] {
+	height: 50px;
+	width: 250px;
+	text-align: center;
+	border: 3px;
+	background: var(--button-color-1);
+	color: var(--button-color-2);
+	border-radius: 8px;
+	font-size: 20px;
+	padding: 0px 20px;
+	margin: 25px auto;
 	transition: all 1s ease;
 	display: block;
 }
-.card-body input:hover{
+
+.card-body input {
+	height: 50px;
+	text-align: center;
+	border: 3px;
+	background: var(--button-color-1);
+	color: var(--text-color);
+	border-radius: 8px;
+	font-size: 20px;
+	padding: 0px 20px;
+	margin: 15px auto;
+	transition: all 1s ease;
+	display: block;
+}
+
+.card-body input:hover {
 	background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
 	color: white;
 }
-.card-body input:active{
+
+.card-body input:active {
 	transform: scale(1.1, 1.1);
 }
 
-.Contacts__Text img{
+.Contacts__Text img {
 	width: 100%;
 }
 
 /* Google */
 
-.Google_Map .container-fluid{
+.Google_Map .container-fluid {
 	width: 100%;
 	height: 300px;
 	padding: 0;
@@ -970,6 +1004,7 @@ body {
 	width: 100%;
 	background: var(--main-color-1);
 }
+
 .Footer p {
 	padding-top: 50px;
 	text-align: center;
@@ -991,34 +1026,42 @@ width: 50%;
 		height: 475px;
 		width: 475px;
 	}
-	.Contacts{
+
+	.Contacts {
 		margin-top: 50px;
 	}
 }
+
 @media (max-width: 1880px) {
 	.Title__Container h1 {
 		font-size: 54px;
 	}
+
 	.Case__IMG {
 		right: -82px;
 		bottom: 322px;
 	}
-	.Contacts{
+
+	.Contacts {
 		margin-top: 100px;
 	}
 }
-@media (max-width: 1600px){
+
+@media (max-width: 1600px) {
 	.Title__Container h1 {
 		font-size: 45px;
 	}
+
 	.Title__Image img {
 		max-width: 90%;
 		float: right;
 	}
+
 	.Case__IMG {
 		right: -82px;
 		bottom: 724px;
 	}
+
 	.Testimonial__IMG {
 		left: -80px;
 	}
@@ -1026,54 +1069,166 @@ width: 50%;
 
 @media (max-width: 1400px) {
 	.Title__Container {
-	padding-left: 100px;
+		padding-left: 100px;
 	}
+
 	.Title__Container img {
 		left: 40px;
 	}
+
 	.Title__Image img {
 		max-width: 100%;
 		float: right;
 	}
+
 	.Title__Container h1 {
 		font-size: 45px;
 	}
 
-	.Main{
+	.Main {
 		height: 840px;
 	}
 
 	.Testimonials__Slider {
 		height: 63%;
 	}
+
 	.Testimonials {
 		height: 685px;
 	}
+
 	.Testimonial__IMG {
 		bottom: -90px;
 	}
+
+	.Skills {
+		height: 1550px;
+	}
 }
-@media (max-width: 1200px){
+
+@media (max-width: 1200px) {
 	.Contacts__Text h1 {
 		font-size: 55px;
 	}
+
 	.Testimonials__Slider {
 		height: 65%;
 	}
+
 	.Testimonials__Text h4 {
 		font-size: 22px;
 		margin: 30px 0px 0px 30px;
 	}
+
 	.Testimonials__Text h1 {
 		font-size: 55px;
 		margin: 0px 0px 0px 30px;
 	}
+
 	.Testimonials__Text a {
 		margin: 30px 0px 0px 30px;
 	}
+
+	.Skills__Arrow {
+		bottom: 430px;
+	}
+
+	.About {
+		height: 1260px;
+	}
 }
-@media (max-width: 950px){
+
+@media (max-width: 992px) {
+	.Case__IMG {
+		display: none;
+	}
+
+	.Testimonials {
+		height: 1012px;
+	}
+
+	.Testimonials__Slider {
+		top: 0;
+	}
+
+	.Testimonials__Slider {
+		margin-top: 32px;
+		height: 45%;
+	}
+
+	.Contacts {
+		height: 1150px;
+	}
+
+	.Contacts__Body {
+		height: 650px;
+	}
+
+	.Contacts .row {
+		height: 30%;
+	}
+
+	.Contacts img {
+		display: none;
+	}
+
+	.Testimonial__IMG {
+		bottom: 0;
+		bottom: -158px;
+		height: 400px;
+		width: 400px;
+	}
+
+	.Testimonials__Text img {
+		position: absolute;
+		right: 100px;
+		bottom: 0;
+	}
+
+	.Testimonials__Text img {
+		position: absolute;
+		right: -18px;
+		bottom: 297px;
+	}
+
+	.Skills {
+		height: 2130px;
+	}
+
+	.Skills__Arrow {
+		bottom: 430px;
+		transform: rotate(137deg);
+		height: 1249px;
+	}
+
+	.Title__Image img {
+		display: none;
+	}
+
+	.About {
+		height: 1123px;
+	}
+
+	.About__Header img {
+		right: -190px;
+		bottom: -33px;
+	}
+}
+
+@media (max-width: 950px) {
 	.Contacts__Text h1 {
 		font-size: 45px;
+	}
+}
+
+@media (max-width: 750px) {
+	.Case {
+		height: 700px;
+	}
+}
+
+@media (max-width: 550px) {
+	.About__Header img {
+		display: none;
 	}
 }
