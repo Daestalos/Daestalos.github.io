@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css\bootstrap.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css\style.css">
+	<link rel="stylesheet" href="css/animate.css"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
 </head>
@@ -85,7 +86,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="About" id="About">
+		<section class="About wow slideInLeft" id="About" data-wow-duration="2s" data-wow-delay="5s">
 			<div class="container">
 				<div class="row d-flex justify-content-center h-100">
 					<div class="About__Div col-12 col-md-10 col-xl-6">
@@ -113,7 +114,7 @@
 					<div class="col-12 col-md-10 col-xl-6">
 						<div class="About__Header col-12 h-100">
 							<h4 class="">ОБО МНЕ</h4>
-							<h1 class="">Lorem, ipsum.</h1>
+							<h1 class="wow bounceInUp">Lorem, ipsum.</h1>
 							<p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure eaque maxime unde facere quas cumque doloribus rerum quisquam pariatur. In, asperiores maxime. Dicta impedit eligendi vero suscipit facilis in!</p>
 							<div class="About__Buttons col-12">
 								<input type="button" onclick="window.location.href='#Contacts'" value="Мои контакты"> <a href="#" class="About__CV">Мой CV</a> </div> <img src="../src/img/3.png"> </div>
@@ -262,6 +263,10 @@
 <script src="../src/js/jquery-3.6.0.min.js"></script>
 <script src="../src/js/bootstrap.bundle.min.js"></script>
 <script src="../src/js/jquery.magnific-popup.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
 <script>
 window.onload = function() {
 	document.body.classList.add('Loaded__Hidden');
