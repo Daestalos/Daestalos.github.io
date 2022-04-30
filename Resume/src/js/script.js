@@ -26,6 +26,9 @@ var wow = new WOW(
 
 $(document).ready(function(){
     
+    // обратная связь
+
+    $("#inputTel").mask("8(999) 999-9999");
 
     /* magnificPopup */
 

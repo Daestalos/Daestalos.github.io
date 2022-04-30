@@ -916,11 +916,11 @@ body {
 	color: var(--text-color-black);
 }
 
-.Contacts__Form input[type="text"], input[type="tel"], input[type="email"] {
+.Contacts__Form input[type="text"], input[type="phone"], input[type="email"] {
 	border: 3px solid var(--bg-color-3);
 	background: var(--bg-color-3);
 	border-radius: 15px;
-	color: white;
+	color: var(--text-color-black);
 	padding-left: 20px;
 	margin: 15px auto;
 	height: 57px;
@@ -937,7 +937,7 @@ body {
 	border: 3px solid var(--bg-color-3);
 	background: var(--bg-color-3);
 	border-radius: 15px;
-	color: white;
+	color: var(--text-color-black);
 	padding: 10px 0px 0px 20px;
 	font-size: 20px;
 	margin: 15px auto;
