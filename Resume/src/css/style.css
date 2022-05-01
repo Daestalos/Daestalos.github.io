@@ -1005,7 +1005,7 @@ body {
 	background: var(--main-color-1);
 }
 
-.Footer p {
+.Footer p,a {
 	padding-top: 50px;
 	text-align: center;
 	color: white;
