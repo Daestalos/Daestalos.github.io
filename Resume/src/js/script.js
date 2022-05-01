@@ -30,6 +30,21 @@ $(document).ready(function(){
 
     $("#inputTel").mask("8(999) 999-9999");
 
+    $('form').submit(function(event){
+        event.preventDefault();
+
+        $.ajax({
+            type: "POST",
+            url: "php/mail.php",
+            data: $(this).serialize()
+        }).done(function (){
+            $(this).find("input").val("");
+            alert("Успешно отправлено!");
+            $("form").trigger("reset");
+        });
+        return false;
+    });
+
     /* magnificPopup */
 
     $(document).ready(function() {
