@@ -1163,7 +1163,7 @@ width: 50%;
 		display: none;
 	}
 
-	.Testimonials {
+	.Testimonials {	
 		height: 1012px;
 	}
 
@@ -1217,7 +1217,6 @@ width: 50%;
 
 	.Skills__Arrow {
 		bottom: 430px;
-		transform: rotate(137deg);
 		height: 1249px;
 	}
 
@@ -1239,6 +1238,9 @@ width: 50%;
 	.Contacts__Text h1 {
 		font-size: 45px;
 	}
+	.About__Header img {
+		display: none;
+	}
 }
 
 @media (max-width: 750px) {
@@ -1250,5 +1252,40 @@ width: 50%;
 @media (max-width: 550px) {
 	.About__Header img {
 		display: none;
+	}
+    .About__Header img {
+		bottom: -98px;
+	}
+	.Testimonial__IMG {
+		bottom: 0;
+		bottom: -169px;
+		height: 330px;
+		width: 330px;
+	}
+	.Testimonials__Slider {
+		margin-top: 32px;
+		height: 47%;
+	}
+	.Testimonials {
+		height: 1060px;
+	}
+	.Title__Container input {
+
+		width: 95%;
+	}
+	.Title__Container {
+		padding-left: 7%;
+	}
+}
+
+@media (max-width: 350px) {
+	.About__Buttons input {
+		margin: 20px 15px 0px 32px;
+	}
+	.About__Buttons input {
+    width: 95%;
+	}
+	.About__CV {
+    margin: 20px 0px 0px 45%;
 	}
 }
