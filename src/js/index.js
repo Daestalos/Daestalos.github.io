@@ -110,8 +110,8 @@ const changeSlide = (i) => {
 
     nextSlide.style.display = 'block';
     nextDot.classList.add('slider__active');
-    
 }
+
 
 sliderNext.addEventListener('click', () => {
     const currentDot = document.querySelector('.slider__active');
