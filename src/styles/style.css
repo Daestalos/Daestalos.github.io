@@ -348,7 +348,6 @@
     position: absolute;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
     transition: 0.6s ease;
     z-index: 4;
   }
@@ -358,11 +357,11 @@
   }
 
   .slider__next {
-    right: -15px;
+    right: 0;
   }
 
   .slider__prev{
-    left: -15px;
+    left: 0;
   }
 
 
@@ -660,6 +659,10 @@
     
     .hot-news__row img {
         height: 20px;
+    }
+
+    .slider__prev img, .slider__next img {
+        height: 40px;
     }
 }
 

@@ -97,6 +97,9 @@ const renderDots = (i) => {
 
 const changeSlide = (i) => {
     const sliders = document.querySelectorAll('.pin-news__content');
+    const currentDot = document.querySelector('.slider__active');
+    const currentSlide = document.querySelector(`[data-id="${currentDot.dataset.move}"]`);
+
     let index = i;
 
     if(index > sliders.length - 1) {
@@ -105,6 +108,8 @@ const changeSlide = (i) => {
         index = sliders.length - 1;
     }
 
+    currentDot.classList.remove('slider__active');
+    currentSlide.style.display = 'none';
     const nextSlide = document.querySelector(`[data-id="${index}"]`);
     const nextDot = document.querySelector(`[data-move="${index}"]`);
 
@@ -113,20 +118,32 @@ const changeSlide = (i) => {
 }
 
 
+// проверка на ширину экрана и включение слайдера
+
+const sliderInterval = setInterval(() => {
+    const currentDot = document.querySelector('.slider__active');
+
+    console.log(window.innerWidth);
+    if(currentDot && window.innerWidth < 480){
+        changeSlide(+currentDot.dataset.move + 1)
+    } else {
+        clearInterval(sliderInterval);
+        [...document.getElementsByClassName('pin-news__content')].forEach(element => {
+            element.style.display = 'block';
+        });
+    }
+}, 1000)
+
+
 sliderNext.addEventListener('click', () => {
     const currentDot = document.querySelector('.slider__active');
-    const currentSlide = document.querySelector(`[data-id="${currentDot.dataset.move}"]`);
-    currentDot.classList.remove('slider__active');
-    currentSlide.style.display = 'none'
     changeSlide(+currentDot.dataset.move + 1);
 })
 
 sliderPrev.addEventListener('click', () => {
     const currentDot = document.querySelector('.slider__active');
-    const currentSlide = document.querySelector(`[data-id="${currentDot.dataset.move}"]`);
-    currentDot.classList.remove('slider__active');
-    currentSlide.style.display = 'none'
     changeSlide(+currentDot.dataset.move - 1);
 })
+
 
 renderNews()
