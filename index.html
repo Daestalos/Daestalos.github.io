@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peleng test</title>
+
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section class="header-laptop">
+            <div class="header-main">
+                <img class="header-logo" src="./src/assets/logo/peleng-logo.svg">
+            </div>
+            <nav class="header-content">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="#">ГЛАВНАЯ</a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#">Новости</a>
+                                <ul class="submenu-included">
+                                    <li class="included-item"><a href="#">Все новости</a></li>
+                                    <li class="included-item"><a href="#">День качества</a></li>
+                                    <li class="included-item"><a href="#">Видеосюжеты</a></li>
+                                    <li class="included-item"><a href="#">Мероприятия</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu-item"><a href="#">Опросы</a></li>
+                            <li class="submenu-item"><a href="#">Приказы и распоряжения</a></li>
+ 
+                        </ul>
+                    </li>
+                    
+                    <li class="menu-item is-active"><a href="#">О КОМПАНИИ</a></li>
+                    <li class="menu-item"><a href="#">КАТАЛОГИ</a></li>
+
+                    <li class="menu-item"><a href="#">СПРАВОЧНИКИ</a></li>
+                    <li class="menu-item"><a href="#">СОТРУДНИКУ</a></li>
+                </ul>
+            </nav>
+        </section>
+
+
+
+        <section class="header-mobile">
+            <div class="mobile-main">
+                <img class="mobile-logo" src="./src/assets/logo/peleng-logo.svg">
+                <img class="mobile-burger" id="mBurger" src="./src/assets/icons/align-right.svg">
+            </div>
+
+            <div class="header-menu">
+                <div class="menu-content"> 
+                    <div class="header-top">
+                        <img class="mobile-icon" src="./src/assets/logo/peleng-logo.svg">
+                        <img class="mobile-close" id="mClose" src="./src/assets/icons/close.svg">
+                    </div>
+
+                    <nav class="header-content">
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <a href="#">
+                                    ГЛАВНАЯ
+                                    <img id="subMenuSVG" src="./src/assets/icons/dropdown.svg">
+                                    <!-- <svg id="subMenuSVG" viewBox="0 0 20 20" fill="none">
+                                        <path clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#454545"/>
+                                    </svg> -->
+                                </a>
+                                
+                                <ul class="submenu">
+                                    <li class="submenu-item">
+                                        <a href="#">
+                                            Новости
+                                            <img id="subMenuSVG" src="./src/assets/icons/dropdown.svg">
+                                            <!-- <svg id="subMenuSVG" height="25px" viewBox="0 0 20 20" fill="none">
+                                                <path clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#454545"/>
+                                            </svg> -->
+                                        </a>
+                                        <ul class="submenu-included">
+                                            <li class="submenu-included-item"><a href="#">Все новости</a></li>
+                                            <li class="submenu-included-item"><a href="#">День качества</a></li>
+                                            <li class="submenu-included-item"><a href="#">Видеосюжеты</a></li>
+                                            <li class="submenu-included-item"><a href="#">Мероприятия</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="submenu-item"><a href="#">Опросы</a></li>
+                                    <li class="submenu-item"><a href="#">Приказы и распоряжения</a></li>
+         
+                                </ul>
+                            </li>
+                            
+                            <li class="menu-item is-active"><a href="#">О КОМПАНИИ</a></li>
+                            <li class="menu-item"><a href="#">КАТАЛОГИ</a></li>
+        
+                            <li class="menu-item"><a href="#">СПРАВОЧНИКИ</a></li>
+                            <li class="menu-item"><a href="#">СОТРУДНИКУ</a></li>
+    
+                        </ul>
+                    </nav>
+                </div>
+
+
+                <div class="header-footer">
+                    <img src="./src/assets/icons/instagram.svg">
+                    <img src="./src/assets/icons/facebook.svg">
+                    
+                    <img src="./src/assets/icons/linkedin.svg">
+                    <img src="./src/assets/icons/telegram.svg">
+                </div>   
+
+            </div>
+
+        </section>
+    </header>
+
+
+    <main class="news">
+        <section class="hot-news">
+            <!-- <div class="hot-news__img"></div>
+            <div class="hot-news__content">
+                <div class="hot-news__title">
+                    <h2>С Днем защитника Отечества!</h2>
+                </div>
+                <div class="hot-news__text">
+                    <a>Дорогие мужчины Пеленга!
+                    </a>
+                    <a>Администрация, профсоюзный комитет и женская половина ОАО "Пеленг" поздравляют вас с Днем защитника Отечества.</a>
+                </div>
+                <div class="hot-news__row">
+                    <div class="hot-news__container">
+                        <a>16.02.2024</a>
+                        <a><img src="./src/assets/icons/eye.svg">1321</a>
+                        <a><img src="./src/assets/icons/comment.svg">2</a>
+                    </div>
+                    
+                    <img src="./src/assets/icons/hot.svg">
+                </div>
+            </div> -->
+        </section>
+
+        <section class="pin-news">
+
+            <!-- <div class="pin-news__content">
+                <div class="pin-news__img" style="background-image: url('https://www.bsuir.by/m/12_100229_1_182214.jpg')"></div>
+                <div class="pin-news__row">
+                    <div class="pin-news__title">
+                        <h2>Интеллектуальная битва Пеленга 2024 </h2>
+                    </div>
+                    <div class="pin-news__col">
+                        <div class="pin-news__container">
+                            <a>16.02.2024</a>
+                            <a><img src="./src/assets/icons/eye.svg">1321</a>
+                            <a><img src="./src/assets/icons/comment.svg">2</a>
+                        </div>
+                        
+                        <img src="./src/assets/icons/pin.svg">
+                    </div>
+                </div>
+            </div> -->            
+
+            <a class="slider__prev"><img src="./src/assets/icons/prev.svg"></a>
+            <a class="slider__next"><img src="./src/assets/icons/next.svg"></a>
+            
+            <div class="slider__dots">
+                <!-- <span class="slider__dot" onclick="currentSlide(1)"></span> -->
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
+

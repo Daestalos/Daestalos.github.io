@@ -1,0 +1,61 @@
+{
+    "hot": [
+        {
+            "id": 1,
+            "image": "./src/assets/images/23.png",
+            "title": "С Днем защитника Отечества!",
+            "text": "<a>Дорогие мужчины Пеленга!</a><a>Администрация, профсоюзный комитет и женская половина ОАО 'Пеленг' поздравляют вас с Днем защитника Отечества.</a>",
+            "data": "16.02.2024",
+            "views": "1321",
+            "comments": "1321",
+            "status": "hot",
+            "link": "https://peleng.by/info/news/297"
+        }
+    ],
+    "pin": [
+        {
+            "id": 2,
+            "image": "./src/assets/images/brain.png",
+            "title": "Интеллектуальная битва Пеленга 2024",
+            "text": "<a>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</a>",
+            "data": "16.02.2024",
+            "views": "1321",
+            "comments": "2",
+            "status": "pin",
+            "link": "https://peleng.by/info/news/297"
+        },
+        {
+            "id": 3,
+            "image": "./src/assets/images/b24.png",
+            "title": "Правила работы в Битрикс24",
+            "text": "<a>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</a>",
+            "data": "16.02.2024",
+            "views": "1321",
+            "comments": "2",
+            "status": "pin",
+            "link": "https://peleng.by/info/news/297"
+        },
+        {
+            "id": 4,
+            "image": "./src/assets/images/bsuir.jpg",
+            "title": "Первая олимпиада БГУИР-Пеленг",
+            "text": "<a>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</a>",
+            "data": "16.02.2024",
+            "views": "1321",
+            "comments": "2",
+            "status": "pin",
+            "link": "https://peleng.by/info/news/297"
+        },
+        {
+            "id": 5,
+            "image": "./src/assets/images/best.jpg",
+            "title": "Сотрудник года 2023 - победители",
+            "text": "<a>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</a>",
+            "data": "16.02.2024",
+            "views": "1321",
+            "comments": "2",
+            "status": "pin",
+            "link": "https://peleng.by/info/news/297"
+        }
+    ]
+}
