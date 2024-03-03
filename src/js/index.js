@@ -118,23 +118,6 @@ const changeSlide = (i) => {
 }
 
 
-// проверка на ширину экрана и включение слайдера
-
-const sliderInterval = setInterval(() => {
-    const currentDot = document.querySelector('.slider__active');
-
-    console.log(window.innerWidth);
-    if(currentDot && window.innerWidth < 480){
-        changeSlide(+currentDot.dataset.move + 1)
-    } else {
-        clearInterval(sliderInterval);
-        [...document.getElementsByClassName('pin-news__content')].forEach(element => {
-            element.style.display = 'block';
-        });
-    }
-}, 1000)
-
-
 sliderNext.addEventListener('click', () => {
     const currentDot = document.querySelector('.slider__active');
     changeSlide(+currentDot.dataset.move + 1);
