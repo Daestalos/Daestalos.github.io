@@ -5,6 +5,7 @@ const headerMenu = document.querySelector('.header-menu');
 const subMenuSVG = [...document.querySelectorAll('#subMenuSVG')];
 const sliderNext = document.querySelector('.slider__next');
 const sliderPrev = document.querySelector('.slider__prev');
+const currentDot = document.getElementsByClassName('slider__active');
 
 openBurgerBtn.addEventListener('click', () => {
     headerMenu.classList.remove('hideMenu');
@@ -97,8 +98,7 @@ const renderDots = (i) => {
 
 const changeSlide = (i) => {
     const sliders = document.querySelectorAll('.pin-news__content');
-    const currentDot = document.querySelector('.slider__active');
-    const currentSlide = document.querySelector(`[data-id="${currentDot.dataset.move}"]`);
+    const currentSlide = document.querySelector(`[data-id="${currentDot[0].dataset.move}"]`);
 
     let index = i;
 
@@ -108,7 +108,7 @@ const changeSlide = (i) => {
         index = sliders.length - 1;
     }
 
-    currentDot.classList.remove('slider__active');
+    currentDot[0].classList.remove('slider__active');
     currentSlide.style.display = 'none';
     const nextSlide = document.querySelector(`[data-id="${index}"]`);
     const nextDot = document.querySelector(`[data-move="${index}"]`);
@@ -119,13 +119,11 @@ const changeSlide = (i) => {
 
 
 sliderNext.addEventListener('click', () => {
-    const currentDot = document.querySelector('.slider__active');
-    changeSlide(+currentDot.dataset.move + 1);
+    changeSlide(+currentDot[0].dataset.move + 1);
 })
 
 sliderPrev.addEventListener('click', () => {
-    const currentDot = document.querySelector('.slider__active');
-    changeSlide(+currentDot.dataset.move - 1);
+    changeSlide(+currentDot[0].dataset.move - 1);
 })
 
 
